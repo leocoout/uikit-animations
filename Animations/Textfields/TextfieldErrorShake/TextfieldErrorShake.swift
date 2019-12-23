@@ -31,7 +31,7 @@ class TextfieldErrorShake: UIViewController {
         
         textField.transform = CGAffineTransform(translationX: 15, y: 0)
         
-        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 50, options: [.curveEaseInOut], animations: {
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 100, options: [.curveEaseInOut], animations: {
             textField.transform = CGAffineTransform.identity
         }, completion: nil)
     }
