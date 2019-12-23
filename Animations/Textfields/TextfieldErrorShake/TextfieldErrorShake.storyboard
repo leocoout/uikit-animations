@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NmX-Y3-A15">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Textfield Error Shake-->
+        <scene sceneID="YFh-XW-CFb">
+            <objects>
+                <viewController id="NmX-Y3-A15" customClass="TextfieldErrorShake" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Itd-0C-4hf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Se-4d-sBg">
+                                <rect key="frame" x="32" y="436" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LR2-LF-wgT">
+                                <rect key="frame" x="172.5" y="800" width="69" height="30"/>
+                                <state key="normal" title="Confirmar"/>
+                                <connections>
+                                    <action selector="didTapConfirmButton:" destination="NmX-Y3-A15" eventType="touchUpInside" id="uQk-FN-PSH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2eY-dX-A1p" firstAttribute="trailing" secondItem="9Se-4d-sBg" secondAttribute="trailing" constant="32" id="6Oo-cF-Ivq"/>
+                            <constraint firstItem="2eY-dX-A1p" firstAttribute="bottom" secondItem="LR2-LF-wgT" secondAttribute="bottom" constant="32" id="KVo-EL-Wvd"/>
+                            <constraint firstItem="9Se-4d-sBg" firstAttribute="leading" secondItem="2eY-dX-A1p" secondAttribute="leading" constant="32" id="iak-Es-NhT"/>
+                            <constraint firstItem="LR2-LF-wgT" firstAttribute="centerX" secondItem="2eY-dX-A1p" secondAttribute="centerX" id="klS-cq-0TX"/>
+                            <constraint firstItem="9Se-4d-sBg" firstAttribute="centerY" secondItem="2eY-dX-A1p" secondAttribute="centerY" id="orV-gU-9Qc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2eY-dX-A1p"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="9Se-4d-sBg" id="tJr-4w-ieR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvA-hV-uif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="6.6964285714285712"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235D209F23B12B45006037EC /* TextfieldErrorShake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235D209E23B12B45006037EC /* TextfieldErrorShake.storyboard */; };
+		235D20A123B12B59006037EC /* TextfieldErrorShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D20A023B12B59006037EC /* TextfieldErrorShake.swift */; };
 		237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237660F423ADB0AE0003EC20 /* AppDelegate.swift */; };
 		237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237660F623ADB0AE0003EC20 /* SceneDelegate.swift */; };
 		237660F923ADB0AE0003EC20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237660F823ADB0AE0003EC20 /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		235D209E23B12B45006037EC /* TextfieldErrorShake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextfieldErrorShake.storyboard; sourceTree = "<group>"; };
+		235D20A023B12B59006037EC /* TextfieldErrorShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldErrorShake.swift; sourceTree = "<group>"; };
 		237660F123ADB0AE0003EC20 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237660F423ADB0AE0003EC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		237660F623ADB0AE0003EC20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		235D209C23B12B17006037EC /* Textfields */ = {
+			isa = PBXGroup;
+			children = (
+				235D209D23B12B22006037EC /* TextfieldErrorShake */,
+			);
+			path = Textfields;
+			sourceTree = "<group>";
+		};
+		235D209D23B12B22006037EC /* TextfieldErrorShake */ = {
+			isa = PBXGroup;
+			children = (
+				235D209E23B12B45006037EC /* TextfieldErrorShake.storyboard */,
+				235D20A023B12B59006037EC /* TextfieldErrorShake.swift */,
+			);
+			path = TextfieldErrorShake;
+			sourceTree = "<group>";
+		};
 		237660E823ADB0AE0003EC20 = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				239628BE23ADB7CD008E1AA0 /* Main */,
-				239628C623ADB840008E1AA0 /* UIViewAnimate */,
+				239628C623ADB840008E1AA0 /* Basic */,
+				235D209C23B12B17006037EC /* Textfields */,
 				237660F423ADB0AE0003EC20 /* AppDelegate.swift */,
 				237660F623ADB0AE0003EC20 /* SceneDelegate.swift */,
 				237660FD23ADB0B00003EC20 /* Assets.xcassets */,
@@ -89,12 +111,12 @@
 			path = LoadingOne;
 			sourceTree = "<group>";
 		};
-		239628C623ADB840008E1AA0 /* UIViewAnimate */ = {
+		239628C623ADB840008E1AA0 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
 				239628C523ADB839008E1AA0 /* LoadingOne */,
 			);
-			path = UIViewAnimate;
+			path = Basic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +180,7 @@
 				2376610123ADB0B00003EC20 /* LaunchScreen.storyboard in Resources */,
 				239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */,
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
+				235D209F23B12B45006037EC /* TextfieldErrorShake.storyboard in Resources */,
 				237660FC23ADB0AE0003EC20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +196,7 @@
 				239628C123ADB7EF008E1AA0 /* LoadingOneViewController.swift in Sources */,
 				237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
+				235D20A123B12B59006037EC /* TextfieldErrorShake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

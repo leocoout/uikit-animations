@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
-                            <tableViewSection headerTitle="UIView.animate" id="elB-FX-YI9">
+                            <tableViewSection headerTitle="Basic" footerTitle="" id="elB-FX-YI9">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="loader" textLabel="pew-9R-dYM" style="IBUITableViewCellStyleDefault" id="Ft5-m3-yS2">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
@@ -35,6 +35,30 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="h6y-Jd-uun" kind="show" id="hVx-Gd-KMs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Textfields" id="2wa-ha-7cI">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="textfieldError" textLabel="gZf-h7-wac" style="IBUITableViewCellStyleDefault" id="Mp2-Uq-RTA">
+                                        <rect key="frame" x="0.0" y="127.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mp2-Uq-RTA" id="ohY-FG-Ueu">
+                                            <rect key="frame" x="0.0" y="0.0" width="382.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Textfield error shake" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gZf-h7-wac">
+                                                    <rect key="frame" x="20" y="0.0" width="354.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dLz-tk-EqK" kind="show" id="O8w-Ds-6AU"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -59,6 +83,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alS-IH-Xjq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="678" y="-181"/>
+        </scene>
+        <!--TextfieldErrorShake-->
+        <scene sceneID="029-Gj-f6Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TextfieldErrorShake" id="dLz-tk-EqK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="wMc-fO-23h"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vrn-e4-Nn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="721" y="-143"/>
         </scene>
     </scenes>
 </document>
