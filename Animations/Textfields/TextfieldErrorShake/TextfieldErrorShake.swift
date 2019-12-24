@@ -12,7 +12,7 @@ import UIKit
 class TextfieldErrorShake: UIViewController {
     
     // MARK: - Outlets
-    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var emailTextfield: UITextField! //
     
     @IBAction func didTapConfirmButton(_ sender: Any) {
         validateFields([emailTextfield])
