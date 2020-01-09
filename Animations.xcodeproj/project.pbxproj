@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2327F96523B6EDEB009EE830 /* NeumorphismButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2327F96423B6EDEB009EE830 /* NeumorphismButton.swift */; };
+		2327F96723B6EDFE009EE830 /* NeumorphismButtons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2327F96623B6EDFE009EE830 /* NeumorphismButtons.storyboard */; };
 		235D209F23B12B45006037EC /* TextfieldErrorShake.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235D209E23B12B45006037EC /* TextfieldErrorShake.storyboard */; };
 		235D20A123B12B59006037EC /* TextfieldErrorShake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D20A023B12B59006037EC /* TextfieldErrorShake.swift */; };
 		237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237660F423ADB0AE0003EC20 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2327F96423B6EDEB009EE830 /* NeumorphismButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButton.swift; sourceTree = "<group>"; };
+		2327F96623B6EDFE009EE830 /* NeumorphismButtons.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NeumorphismButtons.storyboard; sourceTree = "<group>"; };
 		235D209E23B12B45006037EC /* TextfieldErrorShake.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TextfieldErrorShake.storyboard; sourceTree = "<group>"; };
 		235D20A023B12B59006037EC /* TextfieldErrorShake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldErrorShake.swift; sourceTree = "<group>"; };
 		237660F123ADB0AE0003EC20 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +49,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2327F96323B6ED84009EE830 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2327F96623B6EDFE009EE830 /* NeumorphismButtons.storyboard */,
+				2327F96423B6EDEB009EE830 /* NeumorphismButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		235D209C23B12B17006037EC /* Textfields */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,7 @@
 		237660F323ADB0AE0003EC20 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				2327F96323B6ED84009EE830 /* Buttons */,
 				239628BE23ADB7CD008E1AA0 /* Main */,
 				239628C623ADB840008E1AA0 /* Basic */,
 				235D209C23B12B17006037EC /* Textfields */,
@@ -177,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2327F96723B6EDFE009EE830 /* NeumorphismButtons.storyboard in Resources */,
 				2376610123ADB0B00003EC20 /* LaunchScreen.storyboard in Resources */,
 				239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */,
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
@@ -195,6 +210,7 @@
 				237660F923ADB0AE0003EC20 /* ViewController.swift in Sources */,
 				239628C123ADB7EF008E1AA0 /* LoadingOneViewController.swift in Sources */,
 				237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */,
+				2327F96523B6EDEB009EE830 /* NeumorphismButton.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShake.swift in Sources */,
 			);
