@@ -109,11 +109,11 @@
 		238FBE4023DB792D007459A7 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
-				2346070023C8E50A001F2F36 /* BottomToast.storyboard */,
-				23CF48BD23D5298800055A25 /* LightBoldText.storyboard */,
-				2327F96623B6EDFE009EE830 /* NeumorphismButtons.storyboard */,
-				239628C323ADB835008E1AA0 /* LoadingOne.storyboard */,
-				235D209E23B12B45006037EC /* TextfieldErrorShake.storyboard */,
+				238FBE4A23DB9589007459A7 /* Custom Textfields */,
+				238FBE4923DB9580007459A7 /* Buttons */,
+				238FBE4823DB9578007459A7 /* Alerts */,
+				238FBE4723DB956E007459A7 /* Formatter */,
+				238FBE4B23DB9596007459A7 /* Basic */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -163,6 +163,46 @@
 				23CF48BB23D5297800055A25 /* LightBoldTextViewController.swift */,
 			);
 			path = Formatter;
+			sourceTree = "<group>";
+		};
+		238FBE4723DB956E007459A7 /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				23CF48BD23D5298800055A25 /* LightBoldText.storyboard */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		238FBE4823DB9578007459A7 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				2346070023C8E50A001F2F36 /* BottomToast.storyboard */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		238FBE4923DB9580007459A7 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				2327F96623B6EDFE009EE830 /* NeumorphismButtons.storyboard */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		238FBE4A23DB9589007459A7 /* Custom Textfields */ = {
+			isa = PBXGroup;
+			children = (
+				235D209E23B12B45006037EC /* TextfieldErrorShake.storyboard */,
+			);
+			path = "Custom Textfields";
+			sourceTree = "<group>";
+		};
+		238FBE4B23DB9596007459A7 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				239628C323ADB835008E1AA0 /* LoadingOne.storyboard */,
+			);
+			path = Basic;
 			sourceTree = "<group>";
 		};
 		2ED71B50CE3AB8CFE1DE98C7 /* Pods */ = {
