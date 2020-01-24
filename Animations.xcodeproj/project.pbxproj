@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,7 @@
 		239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239628C323ADB835008E1AA0 /* LoadingOne.storyboard */; };
 		23CF48BC23D5297800055A25 /* LightBoldText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF48BB23D5297800055A25 /* LightBoldText.swift */; };
 		23CF48BE23D5298800055A25 /* LightBoldText.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CF48BD23D5298800055A25 /* LightBoldText.storyboard */; };
+		5C1EBC454691FC21243E9793 /* Pods_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,9 @@
 		239628C323ADB835008E1AA0 /* LoadingOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingOne.storyboard; sourceTree = "<group>"; };
 		23CF48BB23D5297800055A25 /* LightBoldText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBoldText.swift; sourceTree = "<group>"; };
 		23CF48BD23D5298800055A25 /* LightBoldText.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LightBoldText.storyboard; sourceTree = "<group>"; };
+		5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6919A94F09583C063B7BB314 /* Pods-Animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.release.xcconfig"; path = "Target Support Files/Pods-Animations/Pods-Animations.release.xcconfig"; sourceTree = "<group>"; };
+		B6E91C8FEEED45671736DBEA /* Pods-Animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.debug.xcconfig"; path = "Target Support Files/Pods-Animations/Pods-Animations.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1EBC454691FC21243E9793 /* Pods_Animations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,8 @@
 			children = (
 				237660F323ADB0AE0003EC20 /* Animations */,
 				237660F223ADB0AE0003EC20 /* Products */,
+				2ED71B50CE3AB8CFE1DE98C7 /* Pods */,
+				D91FCC0A243CC9EFB2B00AC2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +176,23 @@
 			path = Formatter;
 			sourceTree = "<group>";
 		};
+		2ED71B50CE3AB8CFE1DE98C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6E91C8FEEED45671736DBEA /* Pods-Animations.debug.xcconfig */,
+				6919A94F09583C063B7BB314 /* Pods-Animations.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D91FCC0A243CC9EFB2B00AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2376610523ADB0B00003EC20 /* Build configuration list for PBXNativeTarget "Animations" */;
 			buildPhases = (
+				C7545DD5982437AA9B904BB9 /* [CP] Check Pods Manifest.lock */,
 				237660ED23ADB0AE0003EC20 /* Sources */,
 				237660EE23ADB0AE0003EC20 /* Frameworks */,
 				237660EF23ADB0AE0003EC20 /* Resources */,
+				59A2138BF3B91F79D8EE60A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,6 +265,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59A2138BF3B91F79D8EE60A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animations/Pods-Animations-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Animations/Pods-Animations-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Animations/Pods-Animations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7545DD5982437AA9B904BB9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Animations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		237660ED23ADB0AE0003EC20 /* Sources */ = {
@@ -394,6 +462,7 @@
 		};
 		2376610623ADB0B00003EC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6E91C8FEEED45671736DBEA /* Pods-Animations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -412,6 +481,7 @@
 		};
 		2376610723ADB0B00003EC20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6919A94F09583C063B7BB314 /* Pods-Animations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

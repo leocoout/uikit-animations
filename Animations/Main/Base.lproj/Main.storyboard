@@ -39,7 +39,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Textfields" id="2wa-ha-7cI">
+                            <tableViewSection headerTitle="Custom Textfields" id="2wa-ha-7cI">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="textfieldError" textLabel="gZf-h7-wac" style="IBUITableViewCellStyleDefault" id="Mp2-Uq-RTA">
                                         <rect key="frame" x="0.0" y="127.5" width="414" height="43.5"/>
@@ -154,7 +154,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alS-IH-Xjq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="5"/>
+            <point key="canvasLocation" x="751" y="-10"/>
         </scene>
         <!--TextfieldErrorShake-->
         <scene sceneID="029-Gj-f6Z">
@@ -164,7 +164,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vrn-e4-Nn9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="38"/>
+            <point key="canvasLocation" x="787" y="23"/>
         </scene>
         <!--NeumorphismButtons-->
         <scene sceneID="y6g-Pr-iM5">
@@ -174,7 +174,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6X6-bV-xcG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="795" y="72"/>
+            <point key="canvasLocation" x="796" y="57"/>
         </scene>
         <!--BottomToast-->
         <scene sceneID="vCo-oa-DGE">
@@ -184,7 +184,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eR4-EH-RnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="106"/>
+            <point key="canvasLocation" x="754" y="91"/>
         </scene>
         <!--LightBoldText-->
         <scene sceneID="WgY-ea-tAV">
@@ -194,7 +194,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbD-qF-Jf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="139"/>
+            <point key="canvasLocation" x="759" y="124"/>
         </scene>
     </scenes>
 </document>
