@@ -25,7 +25,7 @@
         <!--Animations-->
         <scene sceneID="K6B-w3-WFw">
             <objects>
-                <tableViewController id="K7z-zo-Yrg" sceneMemberID="viewController">
+                <tableViewController id="K7z-zo-Yrg" customClass="MainViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="wpD-xW-0o9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -175,6 +175,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Animations" id="kNI-XG-URb"/>
+                    <connections>
+                        <segue destination="BOV-2F-Xua" kind="show" identifier="uberRewardsSegue" id="Bxo-4l-Dyi"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZIc-x0-9NW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,7 +191,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="alS-IH-Xjq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="-10"/>
+            <point key="canvasLocation" x="750" y="-10"/>
+        </scene>
+        <!--UberRewardsGauge-->
+        <scene sceneID="Nee-V7-yXs">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UberRewardsGauge" id="BOV-2F-Xua" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vhn-i9-yZU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ei-fT-Kxy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="87"/>
         </scene>
         <!--TextfieldErrorShake-->
         <scene sceneID="029-Gj-f6Z">
@@ -218,7 +231,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eR4-EH-RnO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="754" y="91"/>
+            <point key="canvasLocation" x="753" y="120"/>
         </scene>
         <!--LightBoldText-->
         <scene sceneID="WgY-ea-tAV">
@@ -228,7 +241,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbD-qF-Jf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="124"/>
+            <point key="canvasLocation" x="758" y="154"/>
         </scene>
     </scenes>
 </document>

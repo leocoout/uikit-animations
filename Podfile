@@ -6,5 +6,6 @@ target 'Animations' do
   use_frameworks!
 
   # Pods for Animations
+  pod 'Hero'
 
 end

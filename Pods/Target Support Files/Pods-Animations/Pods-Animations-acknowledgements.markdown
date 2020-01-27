@@ -1,12 +1,11 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## BouncyLayout
+## Hero
 
+The MIT License (MIT)
 
-MIT License
-
-Copyright (c) 2017 Robert-Hein Hooijmans <rh.hooijmans@gmail.com>
+Copyright (c) 2015 Luke Zhao <me@lkzhao.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double BouncyLayoutVersionNumber;
-FOUNDATION_EXPORT const unsigned char BouncyLayoutVersionString[];
+FOUNDATION_EXPORT double HeroVersionNumber;
+FOUNDATION_EXPORT const unsigned char HeroVersionString[];
 
