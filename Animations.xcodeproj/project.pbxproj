@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231E46CE23E0E5EF0075C20D /* Curves.storyboard */; };
+		231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D123E0E60D0075C20D /* CurvesViewController.swift */; };
+		231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D323E0E8870075C20D /* CurvesModels.swift */; };
 		2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */; };
 		2327F96723B6EDFE009EE830 /* NeumorphismButtons.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2327F96623B6EDFE009EE830 /* NeumorphismButtons.storyboard */; };
 		2346070123C8E50A001F2F36 /* BottomToast.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2346070023C8E50A001F2F36 /* BottomToast.storyboard */; };
@@ -30,6 +33,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		231E46CE23E0E5EF0075C20D /* Curves.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curves.storyboard; sourceTree = "<group>"; };
+		231E46D123E0E60D0075C20D /* CurvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesViewController.swift; sourceTree = "<group>"; };
+		231E46D323E0E8870075C20D /* CurvesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesModels.swift; sourceTree = "<group>"; };
 		2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonViewController.swift; sourceTree = "<group>"; };
 		2327F96623B6EDFE009EE830 /* NeumorphismButtons.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NeumorphismButtons.storyboard; sourceTree = "<group>"; };
 		2346070023C8E50A001F2F36 /* BottomToast.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomToast.storyboard; sourceTree = "<group>"; };
@@ -82,6 +88,22 @@
 				238FBE4F23DB9623007459A7 /* UberRewardsGaugeViewController.swift */,
 			);
 			path = UberRewardsGauge;
+			sourceTree = "<group>";
+		};
+		231E46CD23E0E5E40075C20D /* Curves */ = {
+			isa = PBXGroup;
+			children = (
+				231E46CE23E0E5EF0075C20D /* Curves.storyboard */,
+			);
+			path = Curves;
+			sourceTree = "<group>";
+		};
+		231E46D023E0E6000075C20D /* Curves */ = {
+			isa = PBXGroup;
+			children = (
+				231E46D123E0E60D0075C20D /* CurvesViewController.swift */,
+			);
+			path = Curves;
 			sourceTree = "<group>";
 		};
 		237660E823ADB0AE0003EC20 = {
@@ -143,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */,
+				231E46D323E0E8870075C20D /* CurvesModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -214,6 +237,7 @@
 		23DCD7E723E0DB1500E232FF /* UIView Animate */ = {
 			isa = PBXGroup;
 			children = (
+				231E46CD23E0E5E40075C20D /* Curves */,
 				238FBE4A23DB9589007459A7 /* Custom Textfields */,
 				238FBE4823DB9578007459A7 /* Alerts */,
 				23DCD7E823E0DB2B00E232FF /* LoadingOne */,
@@ -233,6 +257,7 @@
 		23DCD7E923E0DB4400E232FF /* UIView Animate */ = {
 			isa = PBXGroup;
 			children = (
+				231E46D023E0E6000075C20D /* Curves */,
 				238FBE4323DB909E007459A7 /* Custom Textfields */,
 				238FBE4523DB90AB007459A7 /* Alerts */,
 				2306E6AD23DBA54F003D2C79 /* UberRewardsGauge */,
@@ -326,6 +351,7 @@
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
 				23CF48BE23D5298800055A25 /* LightBoldText.storyboard in Resources */,
 				235D209F23B12B45006037EC /* TextfieldErrorShake.storyboard in Resources */,
+				231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */,
 				237660FC23ADB0AE0003EC20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,11 +408,13 @@
 				238FBE5023DB9623007459A7 /* UberRewardsGaugeViewController.swift in Sources */,
 				239628C123ADB7EF008E1AA0 /* LoadingOneViewController.swift in Sources */,
 				237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */,
+				231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */,
 				23DCD7D323DE4C9300E232FF /* MainViewControllerModels.swift in Sources */,
 				2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */,
 				23CF48BC23D5297800055A25 /* LightBoldTextViewController.swift in Sources */,
 				2346070323C8E5B0001F2F36 /* BottomToastViewController.swift in Sources */,
 				23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */,
+				231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */,
 			);

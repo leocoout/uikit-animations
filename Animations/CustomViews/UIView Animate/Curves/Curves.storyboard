@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cWe-8N-wgQ">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Curves View Controller-->
+        <scene sceneID="QEq-zs-S9M">
+            <objects>
+                <viewController id="cWe-8N-wgQ" customClass="CurvesViewController" customModule="Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nqr-A3-sqg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6x-95-VmS">
+                                <rect key="frame" x="24" y="240" width="64" height="64"/>
+                                <color key="backgroundColor" red="0.066666666669999999" green="0.12549019610000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="ijX-rY-q3K"/>
+                                    <constraint firstAttribute="width" constant="64" id="l1o-6o-5Qd"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PJA-1Y-a4m">
+                                <rect key="frame" x="0.0" y="368" width="320" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTn-f1-ist">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <state key="normal" title="Linear"/>
+                                        <connections>
+                                            <action selector="linearAnimation:" destination="cWe-8N-wgQ" eventType="touchUpInside" id="FY6-Vq-Oep"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1h-PS-Psc">
+                                        <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                                        <state key="normal" title="EaseIn"/>
+                                        <connections>
+                                            <action selector="easeInAnimation:" destination="cWe-8N-wgQ" eventType="touchUpInside" id="NsE-Ar-h7b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uro-mC-BOD">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="50"/>
+                                        <state key="normal" title="EaseOut"/>
+                                        <connections>
+                                            <action selector="easeOutAnimation:" destination="cWe-8N-wgQ" eventType="touchUpInside" id="2r6-yn-vCH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KAG-sH-SYA">
+                                        <rect key="frame" x="0.0" y="150" width="320" height="50"/>
+                                        <state key="normal" title="EaseInOut"/>
+                                        <connections>
+                                            <action selector="easeInOutAnimation:" destination="cWe-8N-wgQ" eventType="touchUpInside" id="MV7-GI-p06"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="T29-r9-0EJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PJA-1Y-a4m" firstAttribute="leading" secondItem="zgU-2j-Mb4" secondAttribute="leading" id="2a4-PJ-zex"/>
+                            <constraint firstItem="zgU-2j-Mb4" firstAttribute="trailing" secondItem="PJA-1Y-a4m" secondAttribute="trailing" id="6RS-CV-yLM"/>
+                            <constraint firstItem="zgU-2j-Mb4" firstAttribute="bottom" secondItem="PJA-1Y-a4m" secondAttribute="bottom" id="Ivd-2o-xll"/>
+                            <constraint firstItem="PJA-1Y-a4m" firstAttribute="top" secondItem="D6x-95-VmS" secondAttribute="bottom" constant="64" id="lJN-N3-leJ"/>
+                            <constraint firstItem="D6x-95-VmS" firstAttribute="leading" secondItem="zgU-2j-Mb4" secondAttribute="leading" constant="24" id="zY3-m1-fI4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zgU-2j-Mb4"/>
+                    </view>
+                    <connections>
+                        <outlet property="animatedView" destination="D6x-95-VmS" id="oTy-9o-uId"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W2T-5V-ogZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="92"/>
+        </scene>
+    </scenes>
+</document>
