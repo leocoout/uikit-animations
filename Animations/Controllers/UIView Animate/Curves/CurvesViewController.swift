@@ -43,7 +43,7 @@ class CurvesViewController: UIViewController {
         curves = .curveEaseInOut
         playAnimation()
     }
-gi
+
     private func playAnimation() {
         UIView.animate(withDuration: 1, delay: 0, options: [curves, .autoreverse, .repeat], animations: {
             self.animatedView.frame = self.endPos
