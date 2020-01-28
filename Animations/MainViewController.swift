@@ -14,7 +14,10 @@ class MainViewController: UITableViewController {
     var gaugeAlertNumber = ""
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let models = TableViewIndexPathCells(rawValue: indexPath.row)
+        
+        guard let cell = tableView.cellForRow(at: indexPath)?.tag else { return }
+        
+        let models = HomeTableViewCellTag(rawValue: cell)
         switch models {
         case .uberGauge: showGaugeAlert()
         default: break

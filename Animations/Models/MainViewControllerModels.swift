@@ -9,6 +9,6 @@
 import Foundation
 import UIKit
 
-enum TableViewIndexPathCells: Int {
+enum HomeTableViewCellTag: Int {
     case uberGauge = 1
 }
