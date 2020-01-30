@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class UberRewardsGaugeViewController: UIViewController {
+class UberRewardsGaugeViewController: BaseViewController {
     var number = ""
     let slotMachine = SlotMachine()
 

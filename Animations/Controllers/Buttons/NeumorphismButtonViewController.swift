@@ -9,9 +9,25 @@
 import Foundation
 import UIKit
 
-class NeumorphismButton: UIViewController {
+class NeumorphismButtonViewController: BaseViewController {
+
+    lazy var button: NeumorphicButton = {
+        let button = NeumorphicButton(frame: CGRect(x: 50, y: 50, width: 64, height: 64))
+        button.setImage(UIImage(systemName: "heart"), for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
     
-    @IBOutlet weak var testButton: UIButton!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.addSubview(button)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        button.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
+        button.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
+    }
     
 }
 
@@ -27,11 +43,11 @@ class NeumorphicButton: UIButton {
     }()
     
     let layer2 = CALayer(),
-    layer3 = CALayer(),
-    layer4 = CALayer(),
-    layer5 = CALayer(),
-    layer6 = CALayer(),
-    layer7 = CALayer()
+        layer3 = CALayer(),
+        layer4 = CALayer(),
+        layer5 = CALayer(),
+        layer6 = CALayer(),
+        layer7 = CALayer()
     
     override func awakeFromNib() {
         super.awakeFromNib()

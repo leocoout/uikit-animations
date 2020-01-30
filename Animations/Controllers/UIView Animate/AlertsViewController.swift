@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class BottomToast: UIViewController {
+class AlertsViewController: BaseViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
