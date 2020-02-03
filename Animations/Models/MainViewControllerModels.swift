@@ -17,23 +17,32 @@ struct MainTableViewSections {
 struct MainTableViewItem {
     var title: String
     var view: BaseViewController.Type
+    var tag: Int?
 }
 
 struct MainTableViewContent {
     
-    private let firstSectionItens = [MainTableViewItem(title: "Alerts", view: AlertsViewController.self),
-                                     MainTableViewItem(title: "Uber Rewards", view: UberRewardsGaugeViewController.self),
-                                     MainTableViewItem(title: "Textfield shake", view: TextfieldErrorShake.self)]
+    private let viewAnimate = [MainTableViewItem(title: "Alerts", view: AlertsViewController.self),
+                               MainTableViewItem(title: "Uber Rewards", view: UberRewardsGaugeViewController.self, tag: 0),
+                               MainTableViewItem(title: "Textfield shake", view: TextfieldErrorShake.self),
+                               MainTableViewItem(title: "Twitter Menu", view: TwitterMenu.self)]
     
-    private let secondSectionItens = [MainTableViewItem(title: "Button", view: NeumorphismButtonViewController.self)]
+    private let property = [MainTableViewItem(title: "RubberBand", view: RubberBandViewController.self)]
     
-    private let thirdSectionItens = [MainTableViewItem(title: "Light/Bold", view: LightBoldTextViewController.self),]
+    private let neomorphism = [MainTableViewItem(title: "Button", view: NeumorphismButtonViewController.self)]
+    
+    private let formatter = [MainTableViewItem(title: "Light/Bold", view: LightBoldTextViewController.self),]
     
     var sections: [MainTableViewSections] {
         return [
-            MainTableViewSections(headerTitle: "UI View Animate", itens: firstSectionItens),
-            MainTableViewSections(headerTitle: "Neomorphism", itens: secondSectionItens),
-            MainTableViewSections(headerTitle: "Formatters", itens: thirdSectionItens)
+            MainTableViewSections(headerTitle: "UI View Animate", itens: viewAnimate),
+            MainTableViewSections(headerTitle: "UI View PropertyAnimator", itens: property),
+            MainTableViewSections(headerTitle: "Neomorphism", itens: neomorphism),
+            MainTableViewSections(headerTitle: "Formatters", itens: formatter)
         ]
     }
+}
+
+enum MainTableViewTags: Int {
+    case uberGauge = 0
 }

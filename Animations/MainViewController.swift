@@ -13,6 +13,7 @@ class MainViewController: UITableViewController {
     
     // MARK: Properties
     private var tableContent = MainTableViewContent()
+    private var gaugeAlertNumber = ""
     
     // MARK: Config TableView
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -41,8 +42,43 @@ class MainViewController: UITableViewController {
         let vc = item.view.init()
         vc.title = item.title
         
-        navigationController?.pushViewController(vc, animated: true)
+        if let itemTag = item.tag {
+            let tags = MainTableViewTags(rawValue: itemTag)
+            switch tags {
+            case .uberGauge:
+                showGaugeAlert(controller: vc)
+            default: break
+            }
+        }
+       
+      navigationController?.pushViewController(vc, animated: true)
     }
+    
+    private func showGaugeAlert(controller: UIViewController) {
+        
+        let view = controller as? UberRewardsGaugeViewController
+        let alert = UIAlertController(title: "Digite um valor", message: "Valor a ser exibido na gauge", preferredStyle: .alert )
+        
+        let save = UIAlertAction(title: "Abrir", style: .default) { (alertAction) in
+            let textField = alert.textFields?[0]
+            view?.number = textField?.text ?? ""
+            textField?.text?.isEmpty ?? false ? debugPrint("Textfield em branco") : self.navigateToGauge(controller: view)
+        }
+        
+        alert.addTextField { textField in
+            textField.placeholder = "valor"
+        }
+        
+        alert.addAction(save)
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        
+        self.present(alert, animated:true, completion: nil)
+    }
+    
+    private func navigateToGauge(controller: UIViewController?) {
+        navigationController?.pushViewController(controller ?? UIViewController(), animated: true)
+    }
+    
 }
 
 class MainControllerCell: UITableViewCell {
