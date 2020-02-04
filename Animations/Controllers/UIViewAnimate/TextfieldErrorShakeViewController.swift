@@ -21,7 +21,7 @@ class TextfieldErrorShake: BaseViewController {
     }()
     
     lazy var button: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.addTarget(self, action: #selector(didTapConfirmButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Validar", for: .normal)

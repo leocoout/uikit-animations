@@ -28,7 +28,8 @@ struct MainTableViewContent {
                                MainTableViewItem(title: "Twitter Menu", view: TwitterMenu.self)]
     
     private let property = [MainTableViewItem(title: "RubberBand", view: RubberBandViewController.self)]
-    
+    private let lottie = [MainTableViewItem(title: "Lottie Rubber Effect", view: RubberBandViewController.self)]
+
     private let neomorphism = [MainTableViewItem(title: "Button", view: NeumorphismButtonViewController.self)]
     
     private let formatter = [MainTableViewItem(title: "Light/Bold", view: LightBoldTextViewController.self),]
@@ -37,8 +38,10 @@ struct MainTableViewContent {
         return [
             MainTableViewSections(headerTitle: "UI View Animate", itens: viewAnimate),
             MainTableViewSections(headerTitle: "UI View PropertyAnimator", itens: property),
+            MainTableViewSections(headerTitle: "Lottie", itens: lottie),
             MainTableViewSections(headerTitle: "Neomorphism", itens: neomorphism),
             MainTableViewSections(headerTitle: "Formatters", itens: formatter)
+            
         ]
     }
 }
