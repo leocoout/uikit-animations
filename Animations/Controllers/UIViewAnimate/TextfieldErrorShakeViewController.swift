@@ -34,7 +34,12 @@ class TextfieldErrorShake: BaseViewController {
     // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupLayout()
+ 
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+               setupLayout()
     }
     
     private func setupLayout() {

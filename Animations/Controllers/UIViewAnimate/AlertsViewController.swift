@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class AlertsViewController: BaseViewController {
+class AlertsViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+
         let manager = AlertManager(view: self.view)
         manager.displayText = "Erro. Por favor, tente novamente."
         manager.animationStyle = .startNormal

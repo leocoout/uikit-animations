@@ -50,7 +50,7 @@ class MainViewController: UITableViewController {
             default: break
             }
         }
-       
+        
       navigationController?.pushViewController(vc, animated: true)
     }
     

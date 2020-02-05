@@ -16,7 +16,7 @@ struct MainTableViewSections {
 
 struct MainTableViewItem {
     var title: String
-    var view: BaseViewController.Type
+    var view: UIViewController.Type
     var tag: Int?
 }
 
