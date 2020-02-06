@@ -27,6 +27,7 @@
 		239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239628C323ADB835008E1AA0 /* LoadingOne.storyboard */; };
 		23CF48BC23D5297800055A25 /* LightBoldTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF48BB23D5297800055A25 /* LightBoldTextViewController.swift */; };
 		23D64B0B23E8E72800A67ED6 /* LottieRubberEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D64B0A23E8E72800A67ED6 /* LottieRubberEffect.swift */; };
+		23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */; };
 		23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D023DE4C1D00E232FF /* MainViewController.swift */; };
 		23DCD7D323DE4C9300E232FF /* MainViewControllerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */; };
 		5C1EBC454691FC21243E9793 /* Pods_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */; };
@@ -55,6 +56,7 @@
 		239628C323ADB835008E1AA0 /* LoadingOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingOne.storyboard; sourceTree = "<group>"; };
 		23CF48BB23D5297800055A25 /* LightBoldTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBoldTextViewController.swift; sourceTree = "<group>"; };
 		23D64B0A23E8E72800A67ED6 /* LottieRubberEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieRubberEffect.swift; sourceTree = "<group>"; };
+		23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextfieldShakeError.xib; sourceTree = "<group>"; };
 		23DCD7D023DE4C1D00E232FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerModels.swift; sourceTree = "<group>"; };
 		5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,7 +115,7 @@
 			children = (
 				238FBE4123DB796F007459A7 /* Models */,
 				238FBE3F23DB78D9007459A7 /* Controllers */,
-				238FBE4023DB792D007459A7 /* CustomViews */,
+				238FBE4023DB792D007459A7 /* Views */,
 				237660FA23ADB0AE0003EC20 /* Main.storyboard */,
 				23DCD7D023DE4C1D00E232FF /* MainViewController.swift */,
 				230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */,
@@ -139,12 +141,12 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		238FBE4023DB792D007459A7 /* CustomViews */ = {
+		238FBE4023DB792D007459A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				23DCD7E723E0DB1500E232FF /* UIView Animate */,
 			);
-			path = CustomViews;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		238FBE4123DB796F007459A7 /* Models */ = {
@@ -185,6 +187,7 @@
 			children = (
 				231E46CD23E0E5E40075C20D /* Curves */,
 				23DCD7E823E0DB2B00E232FF /* LoadingOne */,
+				23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */,
 			);
 			path = "UIView Animate";
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2376610123ADB0B00003EC20 /* LaunchScreen.storyboard in Resources */,
+				23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */,
 				239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */,
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
 				231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */,

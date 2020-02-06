@@ -14,4 +14,6 @@ extension UIColor {
     static var redish = #colorLiteral(red: 1, green: 0.3215686275, blue: 0.3215686275, alpha: 1)
     static var grayest = #colorLiteral(red: 0.8997676969, green: 0.8897222877, blue: 0.9028622508, alpha: 1)
     static var gold = #colorLiteral(red: 0.9364331365, green: 0.7046133876, blue: 0.2595461905, alpha: 1)
+    static var ruby = #colorLiteral(red: 0.6929886341, green: 2.68368949e-05, blue: 0.123420544, alpha: 1)
+    static var successGreen = #colorLiteral(red: 0.1670427322, green: 0.6949435472, blue: 0.4409493804, alpha: 1)
 }

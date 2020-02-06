@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AlertsViewController: UIViewController {
+class AlertsViewController: BaseViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

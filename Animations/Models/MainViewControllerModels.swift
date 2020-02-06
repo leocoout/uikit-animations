@@ -24,7 +24,7 @@ struct MainTableViewContent {
     
     private let viewAnimate = [MainTableViewItem(title: "Alerts", view: AlertsViewController.self),
                                MainTableViewItem(title: "Uber Rewards", view: UberRewardsGaugeViewController.self, tag: 0),
-                               MainTableViewItem(title: "Textfield shake", view: TextfieldErrorShake.self),
+                               MainTableViewItem(title: "Textfield shake", view: TextfieldErrorShake.self, tag: 1),
                                MainTableViewItem(title: "Twitter Menu", view: TwitterMenu.self)]
     
     private let property = [MainTableViewItem(title: "RubberBand", view: RubberBandViewController.self)]
@@ -48,4 +48,5 @@ struct MainTableViewContent {
 
 enum MainTableViewTags: Int {
     case uberGauge = 0
+    case textfieldShake = 1
 }

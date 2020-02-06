@@ -43,10 +43,14 @@ class MainViewController: UITableViewController {
         vc.title = item.title
         
         if let itemTag = item.tag {
+            
             let tags = MainTableViewTags(rawValue: itemTag)
             switch tags {
             case .uberGauge:
                 showGaugeAlert(controller: vc)
+            case .textfieldShake:
+                navigateToTextShakeView()
+                return
             default: break
             }
         }
@@ -81,6 +85,11 @@ extension MainViewController {
     
     private func navigateToGauge(controller: UIViewController?) {
         navigationController?.pushViewController(controller ?? UIViewController(), animated: true)
+    }
+    
+    private func navigateToTextShakeView() {
+        let vc = TextfieldErrorShake(nibName: "TextfieldShakeError", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
 }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TextfieldErrorShake" customModule="Animations" customModuleProvider="target">
+            <connections>
+                <outlet property="customTextfield" destination="N91-4I-W4U" id="cdZ-8h-cj7"/>
+                <outlet property="view" destination="eh7-tA-sf8" id="WbB-ss-DSj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="eh7-tA-sf8">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="b1y-ad-52E">
+                    <rect key="frame" x="24" y="377" width="366" height="152"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N91-4I-W4U" customClass="CustomTextField" customModule="Animations" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="vTR-7c-mDa"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6s-qJ-8p4">
+                            <rect key="frame" x="0.0" y="88" width="366" height="64"/>
+                            <color key="backgroundColor" red="0.12941176469999999" green="0.45098039220000002" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="N8C-Dp-HVl"/>
+                            </constraints>
+                            <state key="normal" title="Validar">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="C1H-VC-3Vk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="llm-Wo-RdA" firstAttribute="trailing" secondItem="b1y-ad-52E" secondAttribute="trailing" constant="24" id="5pd-Bw-CCK"/>
+                <constraint firstItem="b1y-ad-52E" firstAttribute="leading" secondItem="llm-Wo-RdA" secondAttribute="leading" constant="24" id="c8J-QW-jUM"/>
+                <constraint firstItem="b1y-ad-52E" firstAttribute="centerY" secondItem="llm-Wo-RdA" secondAttribute="centerY" id="rcC-mZ-kLA"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="llm-Wo-RdA"/>
+            <point key="canvasLocation" x="163.768115942029" y="66.964285714285708"/>
+        </view>
+    </objects>
+</document>
