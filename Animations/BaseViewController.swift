@@ -17,3 +17,17 @@ class BaseViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
     }
 }
+
+extension UIView {
+    static func activate(constraints: [NSLayoutConstraint]) {
+        constraints.forEach { ($0.firstItem as? UIView)?.translatesAutoresizingMaskIntoConstraints = false }
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    func center(in view: UIView, offset: UIOffset = .zero) {
+        UIView.activate(constraints: [
+            centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0)
+        ])
+    }
+}

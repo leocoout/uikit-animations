@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2309836423EC56A500EBBC4A /* mountain_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309835F23EC56A500EBBC4A /* mountain_animacao.json */; };
+		2309836523EC56A500EBBC4A /* street_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836023EC56A500EBBC4A /* street_animacao.json */; };
+		2309836623EC56A500EBBC4A /* teste.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836123EC56A500EBBC4A /* teste.json */; };
+		2309836723EC56A500EBBC4A /* veiculo_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836223EC56A500EBBC4A /* veiculo_animacao.json */; };
+		2309836823EC56A500EBBC4A /* clouds_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836323EC56A500EBBC4A /* clouds_animacao.json */; };
 		230EEC9C23E348D400EDD6C8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */; };
 		231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231E46CE23E0E5EF0075C20D /* Curves.storyboard */; };
 		231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D123E0E60D0075C20D /* CurvesViewController.swift */; };
@@ -26,7 +31,7 @@
 		239628C123ADB7EF008E1AA0 /* LoadingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239628BF23ADB7EF008E1AA0 /* LoadingOneViewController.swift */; };
 		239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239628C323ADB835008E1AA0 /* LoadingOne.storyboard */; };
 		23CF48BC23D5297800055A25 /* LightBoldTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF48BB23D5297800055A25 /* LightBoldTextViewController.swift */; };
-		23D64B0B23E8E72800A67ED6 /* LottieRubberEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D64B0A23E8E72800A67ED6 /* LottieRubberEffect.swift */; };
+		23D64B0B23E8E72800A67ED6 /* LottieCarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D64B0A23E8E72800A67ED6 /* LottieCarExample.swift */; };
 		23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */; };
 		23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D023DE4C1D00E232FF /* MainViewController.swift */; };
 		23DCD7D323DE4C9300E232FF /* MainViewControllerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */; };
@@ -34,6 +39,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2309835F23EC56A500EBBC4A /* mountain_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountain_animacao.json; sourceTree = "<group>"; };
+		2309836023EC56A500EBBC4A /* street_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = street_animacao.json; sourceTree = "<group>"; };
+		2309836123EC56A500EBBC4A /* teste.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teste.json; sourceTree = "<group>"; };
+		2309836223EC56A500EBBC4A /* veiculo_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = veiculo_animacao.json; sourceTree = "<group>"; };
+		2309836323EC56A500EBBC4A /* clouds_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clouds_animacao.json; sourceTree = "<group>"; };
 		230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		231E46CE23E0E5EF0075C20D /* Curves.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curves.storyboard; sourceTree = "<group>"; };
 		231E46D123E0E60D0075C20D /* CurvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +65,7 @@
 		239628BF23ADB7EF008E1AA0 /* LoadingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOneViewController.swift; sourceTree = "<group>"; };
 		239628C323ADB835008E1AA0 /* LoadingOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingOne.storyboard; sourceTree = "<group>"; };
 		23CF48BB23D5297800055A25 /* LightBoldTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBoldTextViewController.swift; sourceTree = "<group>"; };
-		23D64B0A23E8E72800A67ED6 /* LottieRubberEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieRubberEffect.swift; sourceTree = "<group>"; };
+		23D64B0A23E8E72800A67ED6 /* LottieCarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCarExample.swift; sourceTree = "<group>"; };
 		23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextfieldShakeError.xib; sourceTree = "<group>"; };
 		23DCD7D023DE4C1D00E232FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerModels.swift; sourceTree = "<group>"; };
@@ -76,6 +86,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2309835E23EC568900EBBC4A /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				2309836323EC56A500EBBC4A /* clouds_animacao.json */,
+				2309835F23EC56A500EBBC4A /* mountain_animacao.json */,
+				2309836023EC56A500EBBC4A /* street_animacao.json */,
+				2309836123EC56A500EBBC4A /* teste.json */,
+				2309836223EC56A500EBBC4A /* veiculo_animacao.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		231E46CD23E0E5E40075C20D /* Curves */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +135,7 @@
 		237660F323ADB0AE0003EC20 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				2309835E23EC568900EBBC4A /* Animations */,
 				238FBE4123DB796F007459A7 /* Models */,
 				238FBE3F23DB78D9007459A7 /* Controllers */,
 				238FBE4023DB792D007459A7 /* Views */,
@@ -177,7 +200,7 @@
 		23D64B0923E8E71800A67ED6 /* Lottie */ = {
 			isa = PBXGroup;
 			children = (
-				23D64B0A23E8E72800A67ED6 /* LottieRubberEffect.swift */,
+				23D64B0A23E8E72800A67ED6 /* LottieCarExample.swift */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -290,12 +313,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2309836723EC56A500EBBC4A /* veiculo_animacao.json in Resources */,
 				2376610123ADB0B00003EC20 /* LaunchScreen.storyboard in Resources */,
+				2309836823EC56A500EBBC4A /* clouds_animacao.json in Resources */,
 				23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */,
 				239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */,
+				2309836623EC56A500EBBC4A /* teste.json in Resources */,
+				2309836523EC56A500EBBC4A /* street_animacao.json in Resources */,
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
 				231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */,
 				237660FC23ADB0AE0003EC20 /* Main.storyboard in Resources */,
+				2309836423EC56A500EBBC4A /* mountain_animacao.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +392,7 @@
 				231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */,
-				23D64B0B23E8E72800A67ED6 /* LottieRubberEffect.swift in Sources */,
+				23D64B0B23E8E72800A67ED6 /* LottieCarExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
