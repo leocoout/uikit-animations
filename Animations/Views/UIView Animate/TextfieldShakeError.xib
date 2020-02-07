@@ -34,7 +34,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="64" id="N8C-Dp-HVl"/>
                             </constraints>
-                            <state key="normal" title="Validar">
+                            <state key="normal" title="VALIDAR">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>

@@ -15,6 +15,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationItem.largeTitleDisplayMode = .never
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }
 

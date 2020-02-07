@@ -27,8 +27,8 @@ struct MainTableViewContent {
                                MainTableViewItem(title: "Textfield shake", view: TextfieldErrorShake.self, tag: 1),
                                MainTableViewItem(title: "Twitter Menu", view: TwitterMenu.self)]
     
-    private let property = [MainTableViewItem(title: "RubberBand", view: RubberBandViewController.self)]
-    private let lottie = [MainTableViewItem(title: "Lottie Rubber Effect", view: LottieCarExample.self)]
+    private let property = [MainTableViewItem(title: "Youtube MiniPlayer", view: YoutubeMiniPlayer.self)]
+    private let lottie = [MainTableViewItem(title: "Lottie Car Example", view: LottieCarExample.self)]
 
     private let neomorphism = [MainTableViewItem(title: "Button", view: NeumorphismButtonViewController.self)]
     

@@ -48,7 +48,7 @@ extension String {
     }
     
     private func makeLight() -> NSAttributedString {
-        let lightFont = UIFont.systemFont(ofSize: 16, weight: .light)
+        let lightFont = UIFont.systemFont(ofSize: 24, weight: .light)
         let normalFontAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
                                     NSAttributedString.Key.font: lightFont]
         
@@ -56,7 +56,7 @@ extension String {
     }
     
     private func makeBold() -> NSAttributedString {
-        let boldFont = UIFont.systemFont(ofSize: 16, weight: .bold)
+        let boldFont = UIFont.systemFont(ofSize: 24, weight: .bold)
         let boldFontAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black,
                                   NSAttributedString.Key.font: boldFont]
     

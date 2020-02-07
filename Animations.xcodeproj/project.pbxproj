@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2309836423EC56A500EBBC4A /* mountain_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309835F23EC56A500EBBC4A /* mountain_animacao.json */; };
-		2309836523EC56A500EBBC4A /* street_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836023EC56A500EBBC4A /* street_animacao.json */; };
-		2309836623EC56A500EBBC4A /* teste.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836123EC56A500EBBC4A /* teste.json */; };
-		2309836723EC56A500EBBC4A /* veiculo_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836223EC56A500EBBC4A /* veiculo_animacao.json */; };
-		2309836823EC56A500EBBC4A /* clouds_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309836323EC56A500EBBC4A /* clouds_animacao.json */; };
+		2309838223EDC64400EBBC4A /* street_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837B23EDC64400EBBC4A /* street_animacao.json */; };
+		2309838323EDC64400EBBC4A /* clouds_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837C23EDC64400EBBC4A /* clouds_animacao.json */; };
+		2309838423EDC64400EBBC4A /* final_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837D23EDC64400EBBC4A /* final_animacao.json */; };
+		2309838523EDC64400EBBC4A /* mountain_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837E23EDC64400EBBC4A /* mountain_animacao.json */; };
+		2309838623EDC64400EBBC4A /* veiculo_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837F23EDC64400EBBC4A /* veiculo_animacao.json */; };
+		2309838723EDC64400EBBC4A /* floating_clouds_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309838023EDC64400EBBC4A /* floating_clouds_animacao.json */; };
+		2309838823EDC64400EBBC4A /* ocean_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309838123EDC64400EBBC4A /* ocean_animacao.json */; };
 		230EEC9C23E348D400EDD6C8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */; };
 		231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231E46CE23E0E5EF0075C20D /* Curves.storyboard */; };
 		231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D123E0E60D0075C20D /* CurvesViewController.swift */; };
@@ -39,11 +41,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2309835F23EC56A500EBBC4A /* mountain_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountain_animacao.json; sourceTree = "<group>"; };
-		2309836023EC56A500EBBC4A /* street_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = street_animacao.json; sourceTree = "<group>"; };
-		2309836123EC56A500EBBC4A /* teste.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = teste.json; sourceTree = "<group>"; };
-		2309836223EC56A500EBBC4A /* veiculo_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = veiculo_animacao.json; sourceTree = "<group>"; };
-		2309836323EC56A500EBBC4A /* clouds_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clouds_animacao.json; sourceTree = "<group>"; };
+		2309837B23EDC64400EBBC4A /* street_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = street_animacao.json; sourceTree = "<group>"; };
+		2309837C23EDC64400EBBC4A /* clouds_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clouds_animacao.json; sourceTree = "<group>"; };
+		2309837D23EDC64400EBBC4A /* final_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = final_animacao.json; sourceTree = "<group>"; };
+		2309837E23EDC64400EBBC4A /* mountain_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mountain_animacao.json; sourceTree = "<group>"; };
+		2309837F23EDC64400EBBC4A /* veiculo_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = veiculo_animacao.json; sourceTree = "<group>"; };
+		2309838023EDC64400EBBC4A /* floating_clouds_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = floating_clouds_animacao.json; sourceTree = "<group>"; };
+		2309838123EDC64400EBBC4A /* ocean_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ocean_animacao.json; sourceTree = "<group>"; };
 		230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		231E46CE23E0E5EF0075C20D /* Curves.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curves.storyboard; sourceTree = "<group>"; };
 		231E46D123E0E60D0075C20D /* CurvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesViewController.swift; sourceTree = "<group>"; };
@@ -89,11 +93,13 @@
 		2309835E23EC568900EBBC4A /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				2309836323EC56A500EBBC4A /* clouds_animacao.json */,
-				2309835F23EC56A500EBBC4A /* mountain_animacao.json */,
-				2309836023EC56A500EBBC4A /* street_animacao.json */,
-				2309836123EC56A500EBBC4A /* teste.json */,
-				2309836223EC56A500EBBC4A /* veiculo_animacao.json */,
+				2309837C23EDC64400EBBC4A /* clouds_animacao.json */,
+				2309837D23EDC64400EBBC4A /* final_animacao.json */,
+				2309838023EDC64400EBBC4A /* floating_clouds_animacao.json */,
+				2309837E23EDC64400EBBC4A /* mountain_animacao.json */,
+				2309838123EDC64400EBBC4A /* ocean_animacao.json */,
+				2309837B23EDC64400EBBC4A /* street_animacao.json */,
+				2309837F23EDC64400EBBC4A /* veiculo_animacao.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -313,17 +319,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2309836723EC56A500EBBC4A /* veiculo_animacao.json in Resources */,
 				2376610123ADB0B00003EC20 /* LaunchScreen.storyboard in Resources */,
-				2309836823EC56A500EBBC4A /* clouds_animacao.json in Resources */,
 				23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */,
+				2309838223EDC64400EBBC4A /* street_animacao.json in Resources */,
 				239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */,
-				2309836623EC56A500EBBC4A /* teste.json in Resources */,
-				2309836523EC56A500EBBC4A /* street_animacao.json in Resources */,
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
+				2309838423EDC64400EBBC4A /* final_animacao.json in Resources */,
+				2309838723EDC64400EBBC4A /* floating_clouds_animacao.json in Resources */,
+				2309838623EDC64400EBBC4A /* veiculo_animacao.json in Resources */,
 				231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */,
+				2309838323EDC64400EBBC4A /* clouds_animacao.json in Resources */,
+				2309838823EDC64400EBBC4A /* ocean_animacao.json in Resources */,
 				237660FC23ADB0AE0003EC20 /* Main.storyboard in Resources */,
-				2309836423EC56A500EBBC4A /* mountain_animacao.json in Resources */,
+				2309838523EDC64400EBBC4A /* mountain_animacao.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
