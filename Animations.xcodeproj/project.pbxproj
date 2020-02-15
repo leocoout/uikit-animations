@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23027AE123F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23027AE023F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift */; };
+		23027AE323F345EA005C2FD2 /* LottieBasicExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23027AE223F345EA005C2FD2 /* LottieBasicExample.swift */; };
+		23027AE923F34DD8005C2FD2 /* cute_guy.json in Resources */ = {isa = PBXBuildFile; fileRef = 23027AE823F34DD8005C2FD2 /* cute_guy.json */; };
 		2309838223EDC64400EBBC4A /* street_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837B23EDC64400EBBC4A /* street_animacao.json */; };
 		2309838323EDC64400EBBC4A /* clouds_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837C23EDC64400EBBC4A /* clouds_animacao.json */; };
 		2309838423EDC64400EBBC4A /* final_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837D23EDC64400EBBC4A /* final_animacao.json */; };
@@ -14,6 +17,9 @@
 		2309838623EDC64400EBBC4A /* veiculo_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309837F23EDC64400EBBC4A /* veiculo_animacao.json */; };
 		2309838723EDC64400EBBC4A /* floating_clouds_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309838023EDC64400EBBC4A /* floating_clouds_animacao.json */; };
 		2309838823EDC64400EBBC4A /* ocean_animacao.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309838123EDC64400EBBC4A /* ocean_animacao.json */; };
+		2309838A23EDE8E200EBBC4A /* LottieChangeStateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309838923EDE8E200EBBC4A /* LottieChangeStateButton.swift */; };
+		2309838E23EDF75300EBBC4A /* switch_custom.json in Resources */ = {isa = PBXBuildFile; fileRef = 2309838D23EDF75300EBBC4A /* switch_custom.json */; };
+		2309839023EE564200EBBC4A /* LoadingCurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309838F23EE564200EBBC4A /* LoadingCurvesViewController.swift */; };
 		230EEC9C23E348D400EDD6C8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */; };
 		231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231E46CE23E0E5EF0075C20D /* Curves.storyboard */; };
 		231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D123E0E60D0075C20D /* CurvesViewController.swift */; };
@@ -21,7 +27,7 @@
 		2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */; };
 		2346070323C8E5B0001F2F36 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2346070223C8E5B0001F2F36 /* AlertsViewController.swift */; };
 		235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D20A023B12B59006037EC /* TextfieldErrorShakeViewController.swift */; };
-		23756CBA23E35BF100E77632 /* RubberBandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23756CB923E35BF100E77632 /* RubberBandViewController.swift */; };
+		23756CBA23E35BF100E77632 /* YoutubeMiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23756CB923E35BF100E77632 /* YoutubeMiniPlayer.swift */; };
 		23756CBC23E4B30F00E77632 /* TwitterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23756CBB23E4B30F00E77632 /* TwitterMenu.swift */; };
 		23756CBE23E4BC6800E77632 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23756CBD23E4BC6800E77632 /* Colors.swift */; };
 		237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237660F423ADB0AE0003EC20 /* AppDelegate.swift */; };
@@ -41,6 +47,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23027AE023F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPropertyAnimatorExample.swift; sourceTree = "<group>"; };
+		23027AE223F345EA005C2FD2 /* LottieBasicExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieBasicExample.swift; sourceTree = "<group>"; };
+		23027AE823F34DD8005C2FD2 /* cute_guy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cute_guy.json; sourceTree = "<group>"; };
 		2309837B23EDC64400EBBC4A /* street_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = street_animacao.json; sourceTree = "<group>"; };
 		2309837C23EDC64400EBBC4A /* clouds_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = clouds_animacao.json; sourceTree = "<group>"; };
 		2309837D23EDC64400EBBC4A /* final_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = final_animacao.json; sourceTree = "<group>"; };
@@ -48,6 +57,9 @@
 		2309837F23EDC64400EBBC4A /* veiculo_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = veiculo_animacao.json; sourceTree = "<group>"; };
 		2309838023EDC64400EBBC4A /* floating_clouds_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = floating_clouds_animacao.json; sourceTree = "<group>"; };
 		2309838123EDC64400EBBC4A /* ocean_animacao.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ocean_animacao.json; sourceTree = "<group>"; };
+		2309838923EDE8E200EBBC4A /* LottieChangeStateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieChangeStateButton.swift; sourceTree = "<group>"; };
+		2309838D23EDF75300EBBC4A /* switch_custom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = switch_custom.json; sourceTree = "<group>"; };
+		2309838F23EE564200EBBC4A /* LoadingCurvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCurvesViewController.swift; sourceTree = "<group>"; };
 		230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		231E46CE23E0E5EF0075C20D /* Curves.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curves.storyboard; sourceTree = "<group>"; };
 		231E46D123E0E60D0075C20D /* CurvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +67,7 @@
 		2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonViewController.swift; sourceTree = "<group>"; };
 		2346070223C8E5B0001F2F36 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		235D20A023B12B59006037EC /* TextfieldErrorShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldErrorShakeViewController.swift; sourceTree = "<group>"; };
-		23756CB923E35BF100E77632 /* RubberBandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubberBandViewController.swift; sourceTree = "<group>"; };
+		23756CB923E35BF100E77632 /* YoutubeMiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeMiniPlayer.swift; sourceTree = "<group>"; };
 		23756CBB23E4B30F00E77632 /* TwitterMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterMenu.swift; sourceTree = "<group>"; };
 		23756CBD23E4BC6800E77632 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		237660F123ADB0AE0003EC20 /* Animations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Animations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,9 +109,11 @@
 				2309837D23EDC64400EBBC4A /* final_animacao.json */,
 				2309838023EDC64400EBBC4A /* floating_clouds_animacao.json */,
 				2309837E23EDC64400EBBC4A /* mountain_animacao.json */,
+				2309838D23EDF75300EBBC4A /* switch_custom.json */,
 				2309838123EDC64400EBBC4A /* ocean_animacao.json */,
 				2309837B23EDC64400EBBC4A /* street_animacao.json */,
 				2309837F23EDC64400EBBC4A /* veiculo_animacao.json */,
+				23027AE823F34DD8005C2FD2 /* cute_guy.json */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -115,7 +129,8 @@
 		23756CB823E3576300E77632 /* UIViewPropertyAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				23756CB923E35BF100E77632 /* RubberBandViewController.swift */,
+				23756CB923E35BF100E77632 /* YoutubeMiniPlayer.swift */,
+				23027AE023F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift */,
 			);
 			path = UIViewPropertyAnimator;
 			sourceTree = "<group>";
@@ -207,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				23D64B0A23E8E72800A67ED6 /* LottieCarExample.swift */,
+				2309838923EDE8E200EBBC4A /* LottieChangeStateButton.swift */,
+				23027AE223F345EA005C2FD2 /* LottieBasicExample.swift */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -238,6 +255,7 @@
 				238FBE4F23DB9623007459A7 /* UberRewardsGaugeViewController.swift */,
 				239628BF23ADB7EF008E1AA0 /* LoadingOneViewController.swift */,
 				23756CBB23E4B30F00E77632 /* TwitterMenu.swift */,
+				2309838F23EE564200EBBC4A /* LoadingCurvesViewController.swift */,
 			);
 			path = UIViewAnimate;
 			sourceTree = "<group>";
@@ -321,12 +339,14 @@
 			files = (
 				2376610123ADB0B00003EC20 /* LaunchScreen.storyboard in Resources */,
 				23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */,
+				2309838E23EDF75300EBBC4A /* switch_custom.json in Resources */,
 				2309838223EDC64400EBBC4A /* street_animacao.json in Resources */,
 				239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */,
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
 				2309838423EDC64400EBBC4A /* final_animacao.json in Resources */,
 				2309838723EDC64400EBBC4A /* floating_clouds_animacao.json in Resources */,
 				2309838623EDC64400EBBC4A /* veiculo_animacao.json in Resources */,
+				23027AE923F34DD8005C2FD2 /* cute_guy.json in Resources */,
 				231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */,
 				2309838323EDC64400EBBC4A /* clouds_animacao.json in Resources */,
 				2309838823EDC64400EBBC4A /* ocean_animacao.json in Resources */,
@@ -386,17 +406,21 @@
 			files = (
 				238FBE5023DB9623007459A7 /* UberRewardsGaugeViewController.swift in Sources */,
 				239628C123ADB7EF008E1AA0 /* LoadingOneViewController.swift in Sources */,
+				23027AE323F345EA005C2FD2 /* LottieBasicExample.swift in Sources */,
 				237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */,
-				23756CBA23E35BF100E77632 /* RubberBandViewController.swift in Sources */,
+				23756CBA23E35BF100E77632 /* YoutubeMiniPlayer.swift in Sources */,
 				230EEC9C23E348D400EDD6C8 /* BaseViewController.swift in Sources */,
 				231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */,
 				23DCD7D323DE4C9300E232FF /* MainViewControllerModels.swift in Sources */,
 				23756CBC23E4B30F00E77632 /* TwitterMenu.swift in Sources */,
+				2309838A23EDE8E200EBBC4A /* LottieChangeStateButton.swift in Sources */,
+				2309839023EE564200EBBC4A /* LoadingCurvesViewController.swift in Sources */,
 				2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */,
 				23756CBE23E4BC6800E77632 /* Colors.swift in Sources */,
 				23CF48BC23D5297800055A25 /* LightBoldTextViewController.swift in Sources */,
 				2346070323C8E5B0001F2F36 /* AlertsViewController.swift in Sources */,
 				23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */,
+				23027AE123F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift in Sources */,
 				231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */,

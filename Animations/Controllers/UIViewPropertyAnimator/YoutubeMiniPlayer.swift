@@ -48,6 +48,12 @@ class YoutubeMiniPlayer: BaseViewController {
         setupAnimation()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        animator.pauseAnimation()
+        animator.stopAnimation(true)
+    }
+    
     private func setupAnimation() {
         
         animator.pausesOnCompletion = true

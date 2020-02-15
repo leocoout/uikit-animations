@@ -11,6 +11,8 @@ import UIKit
 
 class TwitterMenu: BaseViewController {
     
+    private var menuBarSize: CGFloat = 52
+    
     lazy var contentStackView: UIStackView = {
         let stack = UIStackView(frame: .zero)
         stack.axis = .vertical
@@ -48,6 +50,14 @@ class TwitterMenu: BaseViewController {
         setupStackButtons()
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        menuBarView.frame = CGRect(x: 0, y: 36,
+                                   width: menuBarSize,
+                                   height: 2)
+    }
+    
     private func setupLayout() {
         view.addSubview(contentStackView)
         contentStackView.addArrangedSubview(menuStackView)
@@ -73,10 +83,6 @@ class TwitterMenu: BaseViewController {
         menuStackView.addArrangedSubview(tweetsButton)
         menuStackView.addArrangedSubview(answersButton)
         menuStackView.addArrangedSubview(mediaButton)
-        
-        menuBarView.frame = CGRect(x: 24, y: 36, width: 24, height: 2)
-        
-        moveMenuBarTo(button: tweetsButton, animated: false)
     }
 }
 
@@ -87,16 +93,13 @@ extension TwitterMenu: TweetButtonDelegate {
     }
     
     private func deselectOthers(button: UIButton) {
-        
         menuStackView.subviews.forEach {
             let buttonSubview = $0 as? TweetButton
             buttonSubview?.isSelected = buttonSubview?.tag == button.tag
         }
-            
     }
     
     private func moveMenuBarTo(button: UIButton, animated: Bool = true) {
-        
         UIView.animate(withDuration: animated ? 0.3 : 0, delay: 0, options: .curveEaseIn, animations: {
             self.menuBarView.frame.origin.x = self.menuStackView.arrangedSubviews[button.tag].frame.origin.x
             self.menuBarView.frame.size.width =  button.titleLabel?.frame.width ?? 0

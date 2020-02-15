@@ -22,13 +22,18 @@ struct MainTableViewItem {
 
 struct MainTableViewContent {
     
-    private let viewAnimate = [MainTableViewItem(title: "Alerts", view: AlertsViewController.self),
+    private let viewAnimate = [MainTableViewItem(title: "Loading Curves", view: LoadingCurvesViewController.self),
+                               MainTableViewItem(title: "Alerts", view: AlertsViewController.self),
                                MainTableViewItem(title: "Uber Rewards", view: UberRewardsGaugeViewController.self, tag: 0),
                                MainTableViewItem(title: "Textfield shake", view: TextfieldErrorShake.self, tag: 1),
                                MainTableViewItem(title: "Twitter Menu", view: TwitterMenu.self)]
     
-    private let property = [MainTableViewItem(title: "Youtube MiniPlayer", view: YoutubeMiniPlayer.self)]
-    private let lottie = [MainTableViewItem(title: "Lottie Car Example", view: LottieCarExample.self)]
+    private let property = [MainTableViewItem(title: "Basic PropertyAnimator Example", view: BasicPropertyExample.self),
+                            MainTableViewItem(title: "Youtube MiniPlayer", view: YoutubeMiniPlayer.self)]
+    
+    private let lottie = [MainTableViewItem(title: "Lottie Basic Example", view: LottieBasicExample.self),
+                          MainTableViewItem(title: "Lottie Car Example", view: LottieCarExample.self),
+                          MainTableViewItem(title: "Lottie Custom Switch", view: LottieChangeStateButton.self)]
 
     private let neomorphism = [MainTableViewItem(title: "Button", view: NeumorphismButtonViewController.self)]
     
