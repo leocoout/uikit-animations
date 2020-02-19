@@ -7,5 +7,6 @@ target 'Animations' do
 
   # Pods for Animations
   pod 'lottie-ios'
+  pod 'Hero'
 
 end

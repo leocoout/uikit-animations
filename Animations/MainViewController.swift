@@ -13,7 +13,6 @@ class MainViewController: UITableViewController {
     
     // MARK: Properties
     private var tableContent = MainTableViewContent()
-    private var gaugeAlertNumber = ""
     
     // MARK: Config TableView
     override func numberOfSections(in tableView: UITableView) -> Int {

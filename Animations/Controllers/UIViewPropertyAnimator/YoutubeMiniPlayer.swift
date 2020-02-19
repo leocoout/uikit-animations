@@ -44,7 +44,6 @@ class YoutubeMiniPlayer: BaseViewController {
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self,
                                                          action: #selector(popVideoView(recognizer:))))
 
-        
         setupAnimation()
     }
     

@@ -88,23 +88,28 @@ class TwitterMenu: BaseViewController {
 
 extension TwitterMenu: TweetButtonDelegate {
     func didTapButton(button: UIButton) {
-        deselectOthers(button: button)
-        moveMenuBarTo(button: button)
+        print(button.tag)
+
+        moveButtonTo(button)
     }
     
     private func deselectOthers(button: UIButton) {
-        menuStackView.subviews.forEach {
+        menuStackView.arrangedSubviews.forEach {
             let buttonSubview = $0 as? TweetButton
             buttonSubview?.isSelected = buttonSubview?.tag == button.tag
         }
     }
     
-    private func moveMenuBarTo(button: UIButton, animated: Bool = true) {
-        UIView.animate(withDuration: animated ? 0.3 : 0, delay: 0, options: .curveEaseIn, animations: {
+    private func moveButtonTo(_ button: UIButton) {
+        
+        let timing = CAMediaTimingFunction(controlPoints: 1, 0, 0, 1)
+        CATransaction.setAnimationTimingFunction(timing)
+        UIView.animate(withDuration: 0.5) {
             self.menuBarView.frame.origin.x = self.menuStackView.arrangedSubviews[button.tag].frame.origin.x
-            self.menuBarView.frame.size.width =  button.titleLabel?.frame.width ?? 0
-        }, completion: nil)
+            self.menuBarView.frame.size.width = self.menuStackView.arrangedSubviews[button.tag].subviews[0].frame.size.width
+        }
     }
+
 }
 
 protocol TweetButtonDelegate: class {

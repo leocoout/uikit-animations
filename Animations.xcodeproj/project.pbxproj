@@ -26,6 +26,7 @@
 		231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D323E0E8870075C20D /* CurvesModels.swift */; };
 		2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */; };
 		2346070323C8E5B0001F2F36 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2346070223C8E5B0001F2F36 /* AlertsViewController.swift */; };
+		234C811423F8B2620052D98A /* HeroBasicExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C811323F8B2620052D98A /* HeroBasicExample.swift */; };
 		235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D20A023B12B59006037EC /* TextfieldErrorShakeViewController.swift */; };
 		23756CBA23E35BF100E77632 /* YoutubeMiniPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23756CB923E35BF100E77632 /* YoutubeMiniPlayer.swift */; };
 		23756CBC23E4B30F00E77632 /* TwitterMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23756CBB23E4B30F00E77632 /* TwitterMenu.swift */; };
@@ -35,14 +36,14 @@
 		237660FC23ADB0AE0003EC20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237660FA23ADB0AE0003EC20 /* Main.storyboard */; };
 		237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237660FD23ADB0B00003EC20 /* Assets.xcassets */; };
 		2376610123ADB0B00003EC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 237660FF23ADB0B00003EC20 /* LaunchScreen.storyboard */; };
+		237A661523FB2BD900F78FAC /* HeroMusicPlayerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237A661423FB2BD900F78FAC /* HeroMusicPlayerExample.swift */; };
 		238FBE5023DB9623007459A7 /* UberRewardsGaugeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238FBE4F23DB9623007459A7 /* UberRewardsGaugeViewController.swift */; };
-		239628C123ADB7EF008E1AA0 /* LoadingOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239628BF23ADB7EF008E1AA0 /* LoadingOneViewController.swift */; };
-		239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 239628C323ADB835008E1AA0 /* LoadingOne.storyboard */; };
 		23CF48BC23D5297800055A25 /* LightBoldTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CF48BB23D5297800055A25 /* LightBoldTextViewController.swift */; };
 		23D64B0B23E8E72800A67ED6 /* LottieCarExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D64B0A23E8E72800A67ED6 /* LottieCarExample.swift */; };
 		23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */; };
 		23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D023DE4C1D00E232FF /* MainViewController.swift */; };
 		23DCD7D323DE4C9300E232FF /* MainViewControllerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */; };
+		23FD6F2723FA009100ADA093 /* LottieCustomPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD6F2623FA009100ADA093 /* LottieCustomPullToRefresh.swift */; };
 		5C1EBC454691FC21243E9793 /* Pods_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,7 @@
 		231E46D323E0E8870075C20D /* CurvesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesModels.swift; sourceTree = "<group>"; };
 		2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonViewController.swift; sourceTree = "<group>"; };
 		2346070223C8E5B0001F2F36 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
+		234C811323F8B2620052D98A /* HeroBasicExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBasicExample.swift; sourceTree = "<group>"; };
 		235D20A023B12B59006037EC /* TextfieldErrorShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldErrorShakeViewController.swift; sourceTree = "<group>"; };
 		23756CB923E35BF100E77632 /* YoutubeMiniPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeMiniPlayer.swift; sourceTree = "<group>"; };
 		23756CBB23E4B30F00E77632 /* TwitterMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterMenu.swift; sourceTree = "<group>"; };
@@ -77,14 +79,14 @@
 		237660FD23ADB0B00003EC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2376610023ADB0B00003EC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2376610223ADB0B00003EC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		237A661423FB2BD900F78FAC /* HeroMusicPlayerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroMusicPlayerExample.swift; sourceTree = "<group>"; };
 		238FBE4F23DB9623007459A7 /* UberRewardsGaugeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UberRewardsGaugeViewController.swift; sourceTree = "<group>"; };
-		239628BF23ADB7EF008E1AA0 /* LoadingOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingOneViewController.swift; sourceTree = "<group>"; };
-		239628C323ADB835008E1AA0 /* LoadingOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoadingOne.storyboard; sourceTree = "<group>"; };
 		23CF48BB23D5297800055A25 /* LightBoldTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBoldTextViewController.swift; sourceTree = "<group>"; };
 		23D64B0A23E8E72800A67ED6 /* LottieCarExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCarExample.swift; sourceTree = "<group>"; };
 		23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextfieldShakeError.xib; sourceTree = "<group>"; };
 		23DCD7D023DE4C1D00E232FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerModels.swift; sourceTree = "<group>"; };
+		23FD6F2623FA009100ADA093 /* LottieCustomPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCustomPullToRefresh.swift; sourceTree = "<group>"; };
 		5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6919A94F09583C063B7BB314 /* Pods-Animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.release.xcconfig"; path = "Target Support Files/Pods-Animations/Pods-Animations.release.xcconfig"; sourceTree = "<group>"; };
 		B6E91C8FEEED45671736DBEA /* Pods-Animations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.debug.xcconfig"; path = "Target Support Files/Pods-Animations/Pods-Animations.debug.xcconfig"; sourceTree = "<group>"; };
@@ -124,6 +126,15 @@
 				231E46CE23E0E5EF0075C20D /* Curves.storyboard */,
 			);
 			path = Curves;
+			sourceTree = "<group>";
+		};
+		234C811223F8B2550052D98A /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				234C811323F8B2620052D98A /* HeroBasicExample.swift */,
+				237A661423FB2BD900F78FAC /* HeroMusicPlayerExample.swift */,
+			);
+			path = Hero;
 			sourceTree = "<group>";
 		};
 		23756CB823E3576300E77632 /* UIViewPropertyAnimator */ = {
@@ -176,6 +187,7 @@
 		238FBE3F23DB78D9007459A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				234C811223F8B2550052D98A /* Hero */,
 				23D64B0923E8E71800A67ED6 /* Lottie */,
 				23756CB823E3576300E77632 /* UIViewPropertyAnimator */,
 				23DCD7E923E0DB4400E232FF /* UIViewAnimate */,
@@ -224,6 +236,7 @@
 				23D64B0A23E8E72800A67ED6 /* LottieCarExample.swift */,
 				2309838923EDE8E200EBBC4A /* LottieChangeStateButton.swift */,
 				23027AE223F345EA005C2FD2 /* LottieBasicExample.swift */,
+				23FD6F2623FA009100ADA093 /* LottieCustomPullToRefresh.swift */,
 			);
 			path = Lottie;
 			sourceTree = "<group>";
@@ -232,18 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				231E46CD23E0E5E40075C20D /* Curves */,
-				23DCD7E823E0DB2B00E232FF /* LoadingOne */,
 				23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */,
 			);
 			path = "UIView Animate";
-			sourceTree = "<group>";
-		};
-		23DCD7E823E0DB2B00E232FF /* LoadingOne */ = {
-			isa = PBXGroup;
-			children = (
-				239628C323ADB835008E1AA0 /* LoadingOne.storyboard */,
-			);
-			path = LoadingOne;
 			sourceTree = "<group>";
 		};
 		23DCD7E923E0DB4400E232FF /* UIViewAnimate */ = {
@@ -253,7 +257,6 @@
 				235D20A023B12B59006037EC /* TextfieldErrorShakeViewController.swift */,
 				2346070223C8E5B0001F2F36 /* AlertsViewController.swift */,
 				238FBE4F23DB9623007459A7 /* UberRewardsGaugeViewController.swift */,
-				239628BF23ADB7EF008E1AA0 /* LoadingOneViewController.swift */,
 				23756CBB23E4B30F00E77632 /* TwitterMenu.swift */,
 				2309838F23EE564200EBBC4A /* LoadingCurvesViewController.swift */,
 			);
@@ -341,7 +344,6 @@
 				23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */,
 				2309838E23EDF75300EBBC4A /* switch_custom.json in Resources */,
 				2309838223EDC64400EBBC4A /* street_animacao.json in Resources */,
-				239628C423ADB835008E1AA0 /* LoadingOne.storyboard in Resources */,
 				237660FE23ADB0B00003EC20 /* Assets.xcassets in Resources */,
 				2309838423EDC64400EBBC4A /* final_animacao.json in Resources */,
 				2309838723EDC64400EBBC4A /* floating_clouds_animacao.json in Resources */,
@@ -405,13 +407,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				238FBE5023DB9623007459A7 /* UberRewardsGaugeViewController.swift in Sources */,
-				239628C123ADB7EF008E1AA0 /* LoadingOneViewController.swift in Sources */,
 				23027AE323F345EA005C2FD2 /* LottieBasicExample.swift in Sources */,
 				237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */,
+				23FD6F2723FA009100ADA093 /* LottieCustomPullToRefresh.swift in Sources */,
 				23756CBA23E35BF100E77632 /* YoutubeMiniPlayer.swift in Sources */,
 				230EEC9C23E348D400EDD6C8 /* BaseViewController.swift in Sources */,
 				231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */,
 				23DCD7D323DE4C9300E232FF /* MainViewControllerModels.swift in Sources */,
+				237A661523FB2BD900F78FAC /* HeroMusicPlayerExample.swift in Sources */,
 				23756CBC23E4B30F00E77632 /* TwitterMenu.swift in Sources */,
 				2309838A23EDE8E200EBBC4A /* LottieChangeStateButton.swift in Sources */,
 				2309839023EE564200EBBC4A /* LoadingCurvesViewController.swift in Sources */,
@@ -424,6 +427,7 @@
 				231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */,
+				234C811423F8B2620052D98A /* HeroBasicExample.swift in Sources */,
 				23D64B0B23E8E72800A67ED6 /* LottieCarExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
