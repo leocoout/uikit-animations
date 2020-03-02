@@ -13,7 +13,7 @@ import Lottie
 class LottieBasicExample: BaseViewController {
     
     lazy var animation: AnimationView = {
-        let view = AnimationView()
+        let view = AnimationView(name: "cute_guy")
         view.frame = CGRect(x: 0, y: 0, width: 164, height: 164)
         view.loopMode = .loop
         view.contentMode = .scaleAspectFill

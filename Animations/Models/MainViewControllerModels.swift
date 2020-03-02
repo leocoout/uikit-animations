@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import UIKit
+import UIKit.UIViewController
 
 struct MainTableViewSections {
     var headerTitle: String
@@ -16,14 +16,16 @@ struct MainTableViewSections {
 
 struct MainTableViewItem {
     var title: String
-    var view: UIViewController.Type
+    var view: BaseViewController.Type
     var tag: Int?
+    var type: ViewControllerType?
 }
 
 struct MainTableViewContent {
     
     private let viewAnimate = [MainTableViewItem(title: "Loading Curves",
-                                                 view: LoadingCurvesViewController.self),
+                                                 view: LoadingCurvesViewController.self,
+                                                 type: .loadingCurves),
                                MainTableViewItem(title: "Alerts",
                                                  view: AlertsViewController.self),
                                MainTableViewItem(title: "Uber Rewards",
@@ -55,20 +57,16 @@ struct MainTableViewContent {
                         MainTableViewItem(title: "Hero Music Player Example",
                                           view: HeroMusicPlayerExample.self)]
 
-    private let neomorphism = [MainTableViewItem(title: "Button",
-                                                 view: NeumorphismButtonViewController.self)]
-    
-    private let formatter = [MainTableViewItem(title: "Light/Bold",
-                                               view: LightBoldTextViewController.self),]
+//    private let formatter = [MainTableViewItem(title: "Light/Bold",
+//                                               view: LightBoldTextViewController.self),]
     
     var sections: [MainTableViewSections] {
         return [
             MainTableViewSections(headerTitle: "UI View Animate", itens: viewAnimate),
             MainTableViewSections(headerTitle: "UI View PropertyAnimator", itens: property),
             MainTableViewSections(headerTitle: "Lottie", itens: lottie),
-            MainTableViewSections(headerTitle: "Hero", itens: hero),
-            MainTableViewSections(headerTitle: "Neomorphism", itens: neomorphism),
-            MainTableViewSections(headerTitle: "Formatters", itens: formatter)
+            MainTableViewSections(headerTitle: "Hero", itens: hero)
+//            MainTableViewSections(headerTitle: "Formatters", itens: formatter)
         ]
     }
 }

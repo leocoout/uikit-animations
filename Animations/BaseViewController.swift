@@ -11,24 +11,30 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    public var type: ViewControllerType?
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         navigationItem.largeTitleDisplayMode = .never
         navigationController?.setNavigationBarHidden(false, animated: true)
-    }
-}
-
-extension UIView {
-    static func activate(constraints: [NSLayoutConstraint]) {
-        constraints.forEach { ($0.firstItem as? UIView)?.translatesAutoresizingMaskIntoConstraints = false }
-        NSLayoutConstraint.activate(constraints)
+        
+        if type != nil {
+              setupNavigationBarItem()
+        }
     }
     
-    func center(in view: UIView, offset: UIOffset = .zero) {
-        UIView.activate(constraints: [
-            centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-            centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0)
-        ])
+    private func setupNavigationBarItem() {
+        let barButtonIten = UIBarButtonItem(image: UIImage(systemName: "info.circle"),
+                                            style: .done,
+                                            target: self,
+                                            action: #selector(didTapInfoButton))
+        
+        navigationItem.rightBarButtonItem = barButtonIten
+    }
+    
+    @objc private func didTapInfoButton() {
+        let vc = DetailsViewController()
+        vc.descriptionLabel.text = type?.getDescription()
+        present(vc, animated: true, completion: nil)
     }
 }

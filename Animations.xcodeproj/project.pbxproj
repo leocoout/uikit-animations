@@ -43,6 +43,8 @@
 		23D64B1223EB64BA00A67ED6 /* TextfieldShakeError.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */; };
 		23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D023DE4C1D00E232FF /* MainViewController.swift */; };
 		23DCD7D323DE4C9300E232FF /* MainViewControllerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */; };
+		23ECC273240D9126008A9C28 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ECC272240D9126008A9C28 /* DetailsViewController.swift */; };
+		23ECC275240D930C008A9C28 /* ViewControllerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23ECC274240D930C008A9C28 /* ViewControllerType.swift */; };
 		23FD6F2723FA009100ADA093 /* LottieCustomPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FD6F2623FA009100ADA093 /* LottieCustomPullToRefresh.swift */; };
 		5C1EBC454691FC21243E9793 /* Pods_Animations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +88,8 @@
 		23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextfieldShakeError.xib; sourceTree = "<group>"; };
 		23DCD7D023DE4C1D00E232FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerModels.swift; sourceTree = "<group>"; };
+		23ECC272240D9126008A9C28 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		23ECC274240D930C008A9C28 /* ViewControllerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerType.swift; sourceTree = "<group>"; };
 		23FD6F2623FA009100ADA093 /* LottieCustomPullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieCustomPullToRefresh.swift; sourceTree = "<group>"; };
 		5C3972D615B5C2A8A6A99F31 /* Pods_Animations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Animations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6919A94F09583C063B7BB314 /* Pods-Animations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Animations.release.xcconfig"; path = "Target Support Files/Pods-Animations/Pods-Animations.release.xcconfig"; sourceTree = "<group>"; };
@@ -187,10 +191,11 @@
 		238FBE3F23DB78D9007459A7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				23ECC271240D910A008A9C28 /* Details */,
+				23DCD7E923E0DB4400E232FF /* UIViewAnimate */,
+				23756CB823E3576300E77632 /* UIViewPropertyAnimator */,
 				234C811223F8B2550052D98A /* Hero */,
 				23D64B0923E8E71800A67ED6 /* Lottie */,
-				23756CB823E3576300E77632 /* UIViewPropertyAnimator */,
-				23DCD7E923E0DB4400E232FF /* UIViewAnimate */,
 				238FBE4623DB90B1007459A7 /* Formatter */,
 				238FBE4423DB90A7007459A7 /* Buttons */,
 			);
@@ -210,6 +215,7 @@
 			children = (
 				23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */,
 				231E46D323E0E8870075C20D /* CurvesModels.swift */,
+				23ECC274240D930C008A9C28 /* ViewControllerType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -261,6 +267,14 @@
 				2309838F23EE564200EBBC4A /* LoadingCurvesViewController.swift */,
 			);
 			path = UIViewAnimate;
+			sourceTree = "<group>";
+		};
+		23ECC271240D910A008A9C28 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				23ECC272240D9126008A9C28 /* DetailsViewController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		2ED71B50CE3AB8CFE1DE98C7 /* Pods */ = {
@@ -418,6 +432,7 @@
 				23756CBC23E4B30F00E77632 /* TwitterMenu.swift in Sources */,
 				2309838A23EDE8E200EBBC4A /* LottieChangeStateButton.swift in Sources */,
 				2309839023EE564200EBBC4A /* LoadingCurvesViewController.swift in Sources */,
+				23ECC275240D930C008A9C28 /* ViewControllerType.swift in Sources */,
 				2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */,
 				23756CBE23E4BC6800E77632 /* Colors.swift in Sources */,
 				23CF48BC23D5297800055A25 /* LightBoldTextViewController.swift in Sources */,
@@ -425,6 +440,7 @@
 				23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */,
 				23027AE123F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift in Sources */,
 				231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */,
+				23ECC273240D9126008A9C28 /* DetailsViewController.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */,
 				234C811423F8B2620052D98A /* HeroBasicExample.swift in Sources */,

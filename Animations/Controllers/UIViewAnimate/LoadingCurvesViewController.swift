@@ -21,7 +21,7 @@ class LoadingCurvesViewController: BaseViewController {
     
     lazy var progressBar: UIView = {
         let view = UIView()
-        view.backgroundColor = .black
+        view.backgroundColor = .darkestGray
         return view
     }()
     

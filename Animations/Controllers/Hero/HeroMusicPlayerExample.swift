@@ -55,15 +55,15 @@ class HeroMusicPlayerExample: BaseViewController {
         musicViewContainer.addSubview(musicImageContainer)
         musicViewContainer.addSubview(playButton)
 
-        musicViewContainer.heightAnchor.constraint(equalToConstant: 300).isActive = true
-        musicViewContainer.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
-        musicViewContainer.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 64).isActive = true
-        musicViewContainer.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -64).isActive = true
+        musicViewContainer.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 32).isActive = true
+        musicViewContainer.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -32).isActive = true
+        musicViewContainer.topAnchor.constraint(equalTo: view.topAnchor, constant: 124).isActive = true
+        musicViewContainer.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -124).isActive = true
         
         musicImageContainer.topAnchor.constraint(equalTo: musicViewContainer.topAnchor,constant: 0).isActive = true
         musicImageContainer.leftAnchor.constraint(equalTo: musicViewContainer.leftAnchor, constant: 0).isActive = true
         musicImageContainer.rightAnchor.constraint(equalTo: musicViewContainer.rightAnchor, constant: 0).isActive = true
-        musicImageContainer.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        musicImageContainer.bottomAnchor.constraint(equalTo: musicViewContainer.bottomAnchor, constant: -124).isActive = true
         
         playButton.rightAnchor.constraint(equalTo: musicViewContainer.rightAnchor, constant: -16).isActive = true
         playButton.centerYAnchor.constraint(equalTo: musicImageContainer.bottomAnchor, constant: 0).isActive = true
@@ -93,9 +93,11 @@ class HeroMusicPlayerAnotherController: BaseViewController {
     }()
     
      lazy var musicImageContainer: UIView = {
-         let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
-         view.backgroundColor = .red
-         view.heroID = "musicImageContainer"
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        view.backgroundColor = .red
+        view.layer.cornerRadius = 8
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.heroID = "musicImageContainer"
         
          return view
      }()
@@ -120,7 +122,11 @@ class HeroMusicPlayerAnotherController: BaseViewController {
         playButton.widthAnchor.constraint(equalToConstant: 48).isActive = true
         playButton.heightAnchor.constraint(equalToConstant: 48).isActive = true
         
-        musicImageContainer.center = view.center
+        musicImageContainer.topAnchor.constraint(equalTo: view.topAnchor, constant: 124).isActive = true
+        musicImageContainer.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 64).isActive = true
+        musicImageContainer.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -64).isActive = true
+        musicImageContainer.heightAnchor.constraint(equalToConstant: 264).isActive = true
+
     }
     
     @objc private func navigateBack() {

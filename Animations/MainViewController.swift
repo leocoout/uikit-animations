@@ -39,6 +39,7 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let item = tableContent.sections[indexPath.section].itens[indexPath.row]
         let vc = item.view.init()
+        vc.type = item.type
         vc.title = item.title
         
         if let itemTag = item.tag {
