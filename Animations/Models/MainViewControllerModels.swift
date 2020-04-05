@@ -66,7 +66,6 @@ struct MainTableViewContent {
             MainTableViewSections(headerTitle: "UI View PropertyAnimator", itens: property),
             MainTableViewSections(headerTitle: "Lottie", itens: lottie),
             MainTableViewSections(headerTitle: "Hero", itens: hero)
-//            MainTableViewSections(headerTitle: "Formatters", itens: formatter)
         ]
     }
 }
