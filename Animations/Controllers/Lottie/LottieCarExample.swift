@@ -48,7 +48,10 @@ class LottieCarExample: BaseViewController {
     lazy var car: AnimationView = {
         let view = AnimationView(name: "veiculo_animacao")
         view.loopMode = .loop
-        view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(gestureCar(recognizer:))))
+        
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(gestureCar(recognizer:)))
+        panGesture.maximumNumberOfTouches = 1
+        view.addGestureRecognizer(panGesture)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -72,78 +75,79 @@ class LottieCarExample: BaseViewController {
     
     lazy var label: UILabel = {
         let label = UILabel()
-        label.attributedText = "Viaje com a sua família para onde quiser sem se preocupar. <b>Conta com a gente ;) </b>".formatBoldString()
+        label.text = "<html>Viaje com a sua família para onde quiser sem se preocupar. <b>Conta com a gente ;) </b></html>"
         label.textAlignment = .center
         label.numberOfLines = 0
         label.textColor = .darkGray
+        label.setHTMLFromString()
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    private var originalTouchPoint: CGPoint = .zero
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         setupLayout()
     }
+}
+
+// MARK: - Private Methods
+extension LottieCarExample {
     
     private func setupLayout() {
         view.backgroundColor = .lightPurple
         
-        view.addSubview(sun)
-        view.addSubview(clouds)
-        view.addSubview(floatingClouds)
-        view.addSubview(mountain)
-        view.addSubview(ocean)
-        view.addSubview(street)
-        view.addSubview(car)
-        view.addSubview(closeButton)
-        view.addSubview(label)
-
-        label.topAnchor.constraint(equalTo: view.topAnchor, constant: 86).isActive = true
-        label.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        label.widthAnchor.constraint(equalToConstant: view.bounds.width - 48).isActive = true
-        label.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        addSubviews()
         
-        closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 24).isActive = true
-        closeButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
-        closeButton.widthAnchor.constraint(equalToConstant: 64).isActive = true
-        closeButton.heightAnchor.constraint(equalToConstant: 64).isActive = true
+        NSLayoutConstraint.activate([
+            label.topAnchor.constraint(equalTo: view.topAnchor, constant: 86),
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            label.widthAnchor.constraint(equalToConstant: view.bounds.width - 48),
+            label.heightAnchor.constraint(equalToConstant: 200),
+            
+            closeButton.topAnchor.constraint(equalTo: view.topAnchor, constant: 24),
+            closeButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
+            closeButton.widthAnchor.constraint(equalToConstant: 64),
+            closeButton.heightAnchor.constraint(equalToConstant: 64),
+            
+            sun.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -24),
+            sun.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
+            sun.widthAnchor.constraint(equalToConstant: 64),
+            sun.heightAnchor.constraint(equalToConstant: 64),
+            
+            clouds.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0),
+            clouds.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            clouds.widthAnchor.constraint(equalToConstant: view.bounds.width + 24),
+            clouds.heightAnchor.constraint(equalToConstant: view.bounds.height),
+            
+            floatingClouds.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -86),
+            floatingClouds.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            floatingClouds.widthAnchor.constraint(equalToConstant: view.bounds.width + 24),
+            floatingClouds.heightAnchor.constraint(equalToConstant: view.bounds.height),
+            
+            mountain.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0),
+            mountain.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            mountain.widthAnchor.constraint(equalToConstant: view.bounds.width + 24),
+            mountain.heightAnchor.constraint(equalToConstant: view.bounds.height),
+            
+            ocean.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 16),
+            ocean.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            ocean.widthAnchor.constraint(equalToConstant: view.bounds.width + 48),
+            ocean.heightAnchor.constraint(equalToConstant: view.bounds.height),
+            
+            car.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 16),
+            car.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -24),
+            car.widthAnchor.constraint(equalToConstant: view.bounds.width),
+            car.heightAnchor.constraint(equalToConstant: view.bounds.height),
+        ])
         
-        sun.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -24).isActive = true
-        sun.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
-        sun.widthAnchor.constraint(equalToConstant: 64).isActive = true
-        sun.heightAnchor.constraint(equalToConstant: 64).isActive = true
         sun.layer.cornerRadius = sun.constraints[1].constant / 2
-
-        clouds.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
-        clouds.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        clouds.widthAnchor.constraint(equalToConstant: view.bounds.width + 24).isActive = true
-        clouds.heightAnchor.constraint(equalToConstant: view.bounds.height).isActive = true
-        
-        floatingClouds.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -86).isActive = true
-        floatingClouds.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        floatingClouds.widthAnchor.constraint(equalToConstant: view.bounds.width + 24).isActive = true
-        floatingClouds.heightAnchor.constraint(equalToConstant: view.bounds.height).isActive = true
-        
-        mountain.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0).isActive = true
-        mountain.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        mountain.widthAnchor.constraint(equalToConstant: view.bounds.width + 24).isActive = true
-        mountain.heightAnchor.constraint(equalToConstant: view.bounds.height).isActive = true
-        
-        ocean.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 16).isActive = true
-        ocean.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
-        ocean.widthAnchor.constraint(equalToConstant: view.bounds.width + 48).isActive = true
-        ocean.heightAnchor.constraint(equalToConstant: view.bounds.height).isActive = true
-        
-        car.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 16).isActive = true
-        car.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -24).isActive = true
-        car.widthAnchor.constraint(equalToConstant: view.bounds.width).isActive = true
-        car.heightAnchor.constraint(equalToConstant: view.bounds.height).isActive = true
         street.frame = view.bounds
         
         floatingClouds.play()
@@ -153,8 +157,12 @@ class LottieCarExample: BaseViewController {
         car.play()
         ocean.play()
     }
-    
-    private var originalTouchPoint: CGPoint = .zero
+
+    private func addSubviews() {
+        [sun, clouds, floatingClouds, mountain, ocean, street, car, closeButton, label].forEach {
+            view.addSubview($0)
+        }
+    }
     
     @objc private func gestureCar(recognizer: UIPanGestureRecognizer) {
         let touchPoint = recognizer.location(in: view)
@@ -167,7 +175,7 @@ class LottieCarExample: BaseViewController {
             
             var offsetX = touchPoint.x - originalTouchPoint.x
             offsetX = offsetX > 0 ? pow(offsetX, 0.7) : -pow(-offsetX, 0.7)
-        
+            
             car.transform = CGAffineTransform(translationX: offsetX, y: offsetY)
             mountain.transform = CGAffineTransform(translationX: -offsetX / 4, y: -offsetY / 4)
             clouds.transform = CGAffineTransform(translationX: -offsetX / 5, y: -offsetY / 5)
@@ -190,7 +198,7 @@ class LottieCarExample: BaseViewController {
         default: break
         }
     }
-    
+
     @objc private func close() {
         navigationController?.popViewController(animated: true)
     }

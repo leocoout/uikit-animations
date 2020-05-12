@@ -56,6 +56,11 @@ struct MainTableViewContent {
                                           view: HeroBasicExample.self),
                         MainTableViewItem(title: "Hero Music Player Example",
                                           view: HeroMusicPlayerExample.self)]
+    
+//    private let skeleton = [MainTableViewItem(title: "Skeleton Examples",
+//                                              view: <#T##BaseViewController.Type#>,
+//                                              tag: <#T##Int?#>,
+//                                              type: <#T##ViewControllerType?#>)]
 
 //    private let formatter = [MainTableViewItem(title: "Light/Bold",
 //                                               view: LightBoldTextViewController.self),]

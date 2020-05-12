@@ -23,7 +23,6 @@
 		230EEC9C23E348D400EDD6C8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */; };
 		231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231E46CE23E0E5EF0075C20D /* Curves.storyboard */; };
 		231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D123E0E60D0075C20D /* CurvesViewController.swift */; };
-		231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D323E0E8870075C20D /* CurvesModels.swift */; };
 		2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */; };
 		2346070323C8E5B0001F2F36 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2346070223C8E5B0001F2F36 /* AlertsViewController.swift */; };
 		234C811423F8B2620052D98A /* HeroBasicExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C811323F8B2620052D98A /* HeroBasicExample.swift */; };
@@ -66,7 +65,6 @@
 		230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		231E46CE23E0E5EF0075C20D /* Curves.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curves.storyboard; sourceTree = "<group>"; };
 		231E46D123E0E60D0075C20D /* CurvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesViewController.swift; sourceTree = "<group>"; };
-		231E46D323E0E8870075C20D /* CurvesModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesModels.swift; sourceTree = "<group>"; };
 		2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonViewController.swift; sourceTree = "<group>"; };
 		2346070223C8E5B0001F2F36 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		234C811323F8B2620052D98A /* HeroBasicExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBasicExample.swift; sourceTree = "<group>"; };
@@ -108,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2301B8CF246B58DA00B75C50 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				2309835E23EC568900EBBC4A /* Animations */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		2309835E23EC568900EBBC4A /* Animations */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,7 +177,7 @@
 		237660F323ADB0AE0003EC20 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				2309835E23EC568900EBBC4A /* Animations */,
+				2301B8CF246B58DA00B75C50 /* SupportingFiles */,
 				238FBE4123DB796F007459A7 /* Models */,
 				238FBE3F23DB78D9007459A7 /* Controllers */,
 				238FBE4023DB792D007459A7 /* Views */,
@@ -214,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				23DCD7D223DE4C9300E232FF /* MainViewControllerModels.swift */,
-				231E46D323E0E8870075C20D /* CurvesModels.swift */,
 				23ECC274240D930C008A9C28 /* ViewControllerType.swift */,
 			);
 			path = Models;
@@ -439,7 +444,6 @@
 				2346070323C8E5B0001F2F36 /* AlertsViewController.swift in Sources */,
 				23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */,
 				23027AE123F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift in Sources */,
-				231E46D423E0E8870075C20D /* CurvesModels.swift in Sources */,
 				23ECC273240D9126008A9C28 /* DetailsViewController.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */,
