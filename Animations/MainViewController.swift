@@ -13,6 +13,13 @@ class MainViewController: UITableViewController {
     
     // MARK: Properties
     private var tableContent = MainTableViewContent()
+    private let customFooterView = CustomFooterView(frame: CGRect(x: 0, y: 0, width: 0, height: 120))
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.tableFooterView = customFooterView
+        tableView.contentInset.bottom = 16
+    }
     
     // MARK: Config TableView
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -92,7 +99,7 @@ extension MainViewController {
     }
     
     private func navigateToTextShakeView(with title: String) {
-        let vc = TextfieldErrorShake(nibName: "TextfieldShakeError", bundle: nil)s
+        let vc = TextfieldErrorShake(nibName: "TextfieldShakeError", bundle: nil)
         navigationController?.pushViewController(vc, animated: true)
     }
     

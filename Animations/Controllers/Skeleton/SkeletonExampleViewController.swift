@@ -19,12 +19,20 @@ enum SkeletonButtonState {
         case .show: return .hide
         }
     }
+    
+    func getButtonTitle () -> String {
+        switch self {
+        case .hide: return "Show skeleton"
+        case .show: return "Hide Skeleton"
+        }
+    }
 }
 
 class SkeletonExampleViewController: BaseViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var actionButton: UIButton!
     
     private var skeletonButtonState: SkeletonButtonState = .show
 
@@ -40,6 +48,7 @@ class SkeletonExampleViewController: BaseViewController {
         case .hide: removeSkeleton()
         }
         
+        actionButton.setTitle(skeletonButtonState.getButtonTitle(), for: .normal)
         skeletonButtonState = skeletonButtonState.toggle()
     }
 }

@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SkeletonExampleViewController" customModule="Animations" customModuleProvider="target">
             <connections>
+                <outlet property="actionButton" destination="AMH-9Q-0jN" id="uio-g9-P1L"/>
                 <outlet property="descriptionLabel" destination="f2L-UV-HQd" id="8AT-z9-xBg"/>
                 <outlet property="imageView" destination="p7G-DV-Qze" id="MnC-0J-eoe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="dNr-Aj-ikd"/>
@@ -38,8 +39,8 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMH-9Q-0jN">
-                    <rect key="frame" x="184" y="768" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <rect key="frame" x="156" y="768" width="102" height="30"/>
+                    <state key="normal" title="Show Skeleton"/>
                     <connections>
                         <action selector="didTapActionButton:" destination="-1" eventType="touchUpInside" id="Vkn-bT-RzD"/>
                     </connections>
