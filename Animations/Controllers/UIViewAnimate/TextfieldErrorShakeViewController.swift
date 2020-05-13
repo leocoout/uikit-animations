@@ -30,7 +30,6 @@ enum CustomTextFieldState {
     case valid, invalid, normal
 }
 
-
 @IBDesignable
 class CustomTextField: UIView {
     

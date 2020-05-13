@@ -49,7 +49,10 @@ class MainViewController: UITableViewController {
             case .uberGauge:
                 showGaugeAlert(controller: vc)
             case .textfieldShake:
-                navigateToTextShakeView()
+                navigateToTextShakeView(with: item.title)
+                return
+            case .skeletonExample:
+                navigateToSkeleton(with: item.title)
                 return
             default: break
             }
@@ -60,6 +63,7 @@ class MainViewController: UITableViewController {
     
 }
 
+// MARK: - Private Methods
 extension MainViewController {
     
     private func showGaugeAlert(controller: UIViewController) {
@@ -87,11 +91,15 @@ extension MainViewController {
         navigationController?.pushViewController(controller ?? UIViewController(), animated: true)
     }
     
-    private func navigateToTextShakeView() {
-        let vc = TextfieldErrorShake(nibName: "TextfieldShakeError", bundle: nil)
+    private func navigateToTextShakeView(with title: String) {
+        let vc = TextfieldErrorShake(nibName: "TextfieldShakeError", bundle: nil)s
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    private func navigateToSkeleton(with title: String) {
+        let vc = SkeletonExampleViewController(nibName: "SkeletonExampleViewController", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 class MainControllerCell: UITableViewCell {
