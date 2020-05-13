@@ -57,10 +57,9 @@ struct MainTableViewContent {
                         MainTableViewItem(title: "Hero Music Player Example",
                                           view: HeroMusicPlayerExample.self)]
     
-//    private let skeleton = [MainTableViewItem(title: "Skeleton Examples",
-//                                              view: <#T##BaseViewController.Type#>,
-//                                              tag: <#T##Int?#>,
-//                                              type: <#T##ViewControllerType?#>)]
+    private let skeleton = [MainTableViewItem(title: "Skeleton",
+                                              view: SkeletonExampleViewController.self,
+                                              tag: 2)]
 
 //    private let formatter = [MainTableViewItem(title: "Light/Bold",
 //                                               view: LightBoldTextViewController.self),]
@@ -70,7 +69,8 @@ struct MainTableViewContent {
             MainTableViewSections(headerTitle: "UI View Animate", itens: viewAnimate),
             MainTableViewSections(headerTitle: "UI View PropertyAnimator", itens: property),
             MainTableViewSections(headerTitle: "Lottie", itens: lottie),
-            MainTableViewSections(headerTitle: "Hero", itens: hero)
+            MainTableViewSections(headerTitle: "Hero", itens: hero),
+            MainTableViewSections(headerTitle: "Skeleton", itens: skeleton)
         ]
     }
 }
@@ -78,4 +78,5 @@ struct MainTableViewContent {
 enum MainTableViewTags: Int {
     case uberGauge = 0
     case textfieldShake = 1
+    case skeletonExample = 2
 }

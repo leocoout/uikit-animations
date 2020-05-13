@@ -6,7 +6,8 @@ target 'Animations' do
   use_frameworks!
 
   # Pods for Animations
-  pod 'lottie-ios'
+  pod 'lottie-ios', '3.1.8'
   pod 'Hero'
+  pod 'SkeletonView'
 
 end

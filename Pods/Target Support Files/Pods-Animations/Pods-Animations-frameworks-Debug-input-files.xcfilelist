@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Animations/Pods-Animations-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Hero/Hero.framework
+${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
 ${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework
