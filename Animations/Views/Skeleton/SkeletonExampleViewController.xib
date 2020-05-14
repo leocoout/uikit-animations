@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SkeletonExampleViewController" customModule="Animations" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="AMH-9Q-0jN" id="uio-g9-P1L"/>
+                <outlet property="descriptionLabel" destination="f2L-UV-HQd" id="8AT-z9-xBg"/>
+                <outlet property="imageView" destination="p7G-DV-Qze" id="MnC-0J-eoe"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dNr-Aj-ikd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_me" translatesAutoresizingMaskIntoConstraints="NO" id="p7G-DV-Qze">
+                    <rect key="frame" x="175" y="357" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="1RU-HX-yXc"/>
+                        <constraint firstAttribute="width" constant="64" id="cVO-xa-t3l"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tristique non dolor et egestas" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2L-UV-HQd">
+                    <rect key="frame" x="16" y="449" width="382" height="61"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMH-9Q-0jN">
+                    <rect key="frame" x="156" y="768" width="102" height="30"/>
+                    <state key="normal" title="Show Skeleton"/>
+                    <connections>
+                        <action selector="didTapActionButton:" destination="-1" eventType="touchUpInside" id="Vkn-bT-RzD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AMH-9Q-0jN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6Yq-8K-6FR"/>
+                <constraint firstItem="p7G-DV-Qze" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Ayn-wL-Y5D"/>
+                <constraint firstItem="p7G-DV-Qze" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="CLv-6i-E4T"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f2L-UV-HQd" secondAttribute="trailing" constant="16" id="ElQ-rQ-xkt"/>
+                <constraint firstItem="f2L-UV-HQd" firstAttribute="top" secondItem="p7G-DV-Qze" secondAttribute="bottom" constant="28" id="JeF-C2-wNM"/>
+                <constraint firstItem="p7G-DV-Qze" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-64" id="SEJ-h6-fpV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AMH-9Q-0jN" secondAttribute="bottom" constant="64" id="XjD-0r-kee"/>
+                <constraint firstItem="f2L-UV-HQd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="x8s-6w-TCZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="128"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_me" width="748" height="758"/>
+    </resources>
+</document>

@@ -1,20 +1,24 @@
 PODS:
   - Hero (1.5.0)
-  - lottie-ios (3.1.6)
+  - lottie-ios (3.1.8)
+  - SkeletonView (1.8.7)
 
 DEPENDENCIES:
   - Hero
-  - lottie-ios
+  - lottie-ios (= 3.1.8)
+  - SkeletonView
 
 SPEC REPOS:
   trunk:
     - Hero
     - lottie-ios
+    - SkeletonView
 
 SPEC CHECKSUMS:
   Hero: b7385b75e7259da62f4f85462f59a5082d66b058
-  lottie-ios: 85ce835dd8c53e02509f20729fc7d6a4e6645a0a
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
+  SkeletonView: ba5370f41280b2f0a76918bb143c1294232bb4f4
 
-PODFILE CHECKSUM: 2d5d8bc00a42105cdc1ec93d6d4e4bfa8fb3423d
+PODFILE CHECKSUM: 4c1583fb8025323394cb3d65ae84d1e08c1514fe
 
 COCOAPODS: 1.8.4

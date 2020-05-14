@@ -24,6 +24,12 @@
 		231E46CF23E0E5EF0075C20D /* Curves.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231E46CE23E0E5EF0075C20D /* Curves.storyboard */; };
 		231E46D223E0E60D0075C20D /* CurvesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E46D123E0E60D0075C20D /* CurvesViewController.swift */; };
 		2327F96523B6EDEB009EE830 /* NeumorphismButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */; };
+		23377949246B942C00D81B49 /* SkeletonExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23377948246B942C00D81B49 /* SkeletonExampleViewController.swift */; };
+		2337794C246B954600D81B49 /* SkeletonExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2337794B246B954600D81B49 /* SkeletonExampleViewController.xib */; };
+		23452789246BA15F00BB3922 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23452788246BA15F00BB3922 /* CustomTextField.swift */; };
+		2345278C246BA19B00BB3922 /* AlertToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345278B246BA19B00BB3922 /* AlertToast.swift */; };
+		2345278E246BA1B400BB3922 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345278D246BA1B400BB3922 /* UIViewExtensions.swift */; };
+		23452791246BA27800BB3922 /* CustomFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23452790246BA27800BB3922 /* CustomFooterView.swift */; };
 		2346070323C8E5B0001F2F36 /* AlertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2346070223C8E5B0001F2F36 /* AlertsViewController.swift */; };
 		234C811423F8B2620052D98A /* HeroBasicExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C811323F8B2620052D98A /* HeroBasicExample.swift */; };
 		235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235D20A023B12B59006037EC /* TextfieldErrorShakeViewController.swift */; };
@@ -66,6 +72,12 @@
 		231E46CE23E0E5EF0075C20D /* Curves.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Curves.storyboard; sourceTree = "<group>"; };
 		231E46D123E0E60D0075C20D /* CurvesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvesViewController.swift; sourceTree = "<group>"; };
 		2327F96423B6EDEB009EE830 /* NeumorphismButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeumorphismButtonViewController.swift; sourceTree = "<group>"; };
+		23377948246B942C00D81B49 /* SkeletonExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonExampleViewController.swift; sourceTree = "<group>"; };
+		2337794B246B954600D81B49 /* SkeletonExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SkeletonExampleViewController.xib; sourceTree = "<group>"; };
+		23452788246BA15F00BB3922 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		2345278B246BA19B00BB3922 /* AlertToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertToast.swift; sourceTree = "<group>"; };
+		2345278D246BA1B400BB3922 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		23452790246BA27800BB3922 /* CustomFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFooterView.swift; sourceTree = "<group>"; };
 		2346070223C8E5B0001F2F36 /* AlertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsViewController.swift; sourceTree = "<group>"; };
 		234C811323F8B2620052D98A /* HeroBasicExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroBasicExample.swift; sourceTree = "<group>"; };
 		235D20A023B12B59006037EC /* TextfieldErrorShakeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldErrorShakeViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +121,8 @@
 		2301B8CF246B58DA00B75C50 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2337794D246B9B5B00D81B49 /* Utils */,
+				237660FD23ADB0B00003EC20 /* Assets.xcassets */,
 				2309835E23EC568900EBBC4A /* Animations */,
 			);
 			path = SupportingFiles;
@@ -136,6 +150,56 @@
 				231E46CE23E0E5EF0075C20D /* Curves.storyboard */,
 			);
 			path = Curves;
+			sourceTree = "<group>";
+		};
+		23377946246B5EDB00D81B49 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				23377948246B942C00D81B49 /* SkeletonExampleViewController.swift */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		2337794A246B953200D81B49 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				2337794B246B954600D81B49 /* SkeletonExampleViewController.xib */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		2337794D246B9B5B00D81B49 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				23756CBD23E4BC6800E77632 /* Colors.swift */,
+				230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */,
+				2345278D246BA1B400BB3922 /* UIViewExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		23452787246BA14A00BB3922 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				23452788246BA15F00BB3922 /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		2345278A246BA19000BB3922 /* AlertToast */ = {
+			isa = PBXGroup;
+			children = (
+				2345278B246BA19B00BB3922 /* AlertToast.swift */,
+			);
+			path = AlertToast;
+			sourceTree = "<group>";
+		};
+		2345278F246BA26500BB3922 /* TableViewFooter */ = {
+			isa = PBXGroup;
+			children = (
+				23452790246BA27800BB3922 /* CustomFooterView.swift */,
+			);
+			path = TableViewFooter;
 			sourceTree = "<group>";
 		};
 		234C811223F8B2550052D98A /* Hero */ = {
@@ -183,13 +247,10 @@
 				238FBE4023DB792D007459A7 /* Views */,
 				237660FA23ADB0AE0003EC20 /* Main.storyboard */,
 				23DCD7D023DE4C1D00E232FF /* MainViewController.swift */,
-				230EEC9B23E348D400EDD6C8 /* BaseViewController.swift */,
 				237660F423ADB0AE0003EC20 /* AppDelegate.swift */,
 				237660F623ADB0AE0003EC20 /* SceneDelegate.swift */,
-				237660FD23ADB0B00003EC20 /* Assets.xcassets */,
 				237660FF23ADB0B00003EC20 /* LaunchScreen.storyboard */,
 				2376610223ADB0B00003EC20 /* Info.plist */,
-				23756CBD23E4BC6800E77632 /* Colors.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -202,6 +263,7 @@
 				23756CB823E3576300E77632 /* UIViewPropertyAnimator */,
 				234C811223F8B2550052D98A /* Hero */,
 				23D64B0923E8E71800A67ED6 /* Lottie */,
+				23377946246B5EDB00D81B49 /* Skeleton */,
 				238FBE4623DB90B1007459A7 /* Formatter */,
 				238FBE4423DB90A7007459A7 /* Buttons */,
 			);
@@ -211,6 +273,8 @@
 		238FBE4023DB792D007459A7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2345278F246BA26500BB3922 /* TableViewFooter */,
+				2337794A246B953200D81B49 /* Skeleton */,
 				23DCD7E723E0DB1500E232FF /* UIView Animate */,
 			);
 			path = Views;
@@ -255,6 +319,8 @@
 		23DCD7E723E0DB1500E232FF /* UIView Animate */ = {
 			isa = PBXGroup;
 			children = (
+				2345278A246BA19000BB3922 /* AlertToast */,
+				23452787246BA14A00BB3922 /* CustomTextField */,
 				231E46CD23E0E5E40075C20D /* Curves */,
 				23D64B1123EB64BA00A67ED6 /* TextfieldShakeError.xib */,
 			);
@@ -372,6 +438,7 @@
 				2309838323EDC64400EBBC4A /* clouds_animacao.json in Resources */,
 				2309838823EDC64400EBBC4A /* ocean_animacao.json in Resources */,
 				237660FC23ADB0AE0003EC20 /* Main.storyboard in Resources */,
+				2337794C246B954600D81B49 /* SkeletonExampleViewController.xib in Resources */,
 				2309838523EDC64400EBBC4A /* mountain_animacao.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +492,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23452789246BA15F00BB3922 /* CustomTextField.swift in Sources */,
 				238FBE5023DB9623007459A7 /* UberRewardsGaugeViewController.swift in Sources */,
 				23027AE323F345EA005C2FD2 /* LottieBasicExample.swift in Sources */,
 				237660F523ADB0AE0003EC20 /* AppDelegate.swift in Sources */,
@@ -444,10 +512,14 @@
 				2346070323C8E5B0001F2F36 /* AlertsViewController.swift in Sources */,
 				23DCD7D123DE4C1D00E232FF /* MainViewController.swift in Sources */,
 				23027AE123F342A0005C2FD2 /* BasicPropertyAnimatorExample.swift in Sources */,
+				23377949246B942C00D81B49 /* SkeletonExampleViewController.swift in Sources */,
 				23ECC273240D9126008A9C28 /* DetailsViewController.swift in Sources */,
+				2345278E246BA1B400BB3922 /* UIViewExtensions.swift in Sources */,
 				237660F723ADB0AE0003EC20 /* SceneDelegate.swift in Sources */,
 				235D20A123B12B59006037EC /* TextfieldErrorShakeViewController.swift in Sources */,
+				2345278C246BA19B00BB3922 /* AlertToast.swift in Sources */,
 				234C811423F8B2620052D98A /* HeroBasicExample.swift in Sources */,
+				23452791246BA27800BB3922 /* CustomFooterView.swift in Sources */,
 				23D64B0B23E8E72800A67ED6 /* LottieCarExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

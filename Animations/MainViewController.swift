@@ -13,6 +13,13 @@ class MainViewController: UITableViewController {
     
     // MARK: Properties
     private var tableContent = MainTableViewContent()
+    private let customFooterView = CustomFooterView(frame: CGRect(x: 0, y: 0, width: 0, height: 120))
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.tableFooterView = customFooterView
+        tableView.contentInset.bottom = 16
+    }
     
     // MARK: Config TableView
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,7 +56,10 @@ class MainViewController: UITableViewController {
             case .uberGauge:
                 showGaugeAlert(controller: vc)
             case .textfieldShake:
-                navigateToTextShakeView()
+                navigateToTextShakeView(with: item.title)
+                return
+            case .skeletonExample:
+                navigateToSkeleton(with: item.title)
                 return
             default: break
             }
@@ -60,6 +70,7 @@ class MainViewController: UITableViewController {
     
 }
 
+// MARK: - Private Methods
 extension MainViewController {
     
     private func showGaugeAlert(controller: UIViewController) {
@@ -87,11 +98,15 @@ extension MainViewController {
         navigationController?.pushViewController(controller ?? UIViewController(), animated: true)
     }
     
-    private func navigateToTextShakeView() {
+    private func navigateToTextShakeView(with title: String) {
         let vc = TextfieldErrorShake(nibName: "TextfieldShakeError", bundle: nil)
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    private func navigateToSkeleton(with title: String) {
+        let vc = SkeletonExampleViewController(nibName: "SkeletonExampleViewController", bundle: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 class MainControllerCell: UITableViewCell {

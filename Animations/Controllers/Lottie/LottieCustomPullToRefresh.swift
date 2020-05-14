@@ -12,7 +12,6 @@ import Lottie
 
 class LottieCustomPullToRefresh: BaseViewController {
     
-    let customItens = ["1", "2"]
     let tableView = UITableView()
     var refreshControl = CustomRefreshView()
     

@@ -13,7 +13,7 @@ class YoutubeMiniPlayer: BaseViewController {
 
     // MARK: Properties
     lazy var videoView: UIImageView = {
-        let view = UIImageView(image: UIImage(named: "player"))
+        let view = UIImageView(image: UIImage(named: "image_player"))
         view.backgroundColor = .red
 
         return view
